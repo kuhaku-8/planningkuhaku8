@@ -32,13 +32,21 @@
             <?php include '../config/sidebar_user.php'; ?>
             <!-- sidebar menu: : style can be found in sidebar.less -->
             <ul class="sidebar-menu" data-widget="tree">
-                <li>
-                    <a href="../user/financial.php">
+                <li class="treeview">
+                    <a href="#">
                         <i class="fa fa-money"></i> <span>Keuangan</span>
+                        <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
                     </a>
+                    <ul class="treeview-menu">
+                        <li><a href="../user/financial.php"><i class="fa fa-eye"></i>Lihat</a></li>
+                        <li><a href="../application/owe.php"><i class="fa fa-plus"></i>Daftar Yang Berutang</a></li>
+                        <li><a href="../application/debt.php"><i class="fa fa-minus"></i>Daftar Hutang</a></li>
+                    </ul>
                 </li>
                 <li>
-                    <a href="./buy.php">
+                    <a href="../application/buy.php">
                         <i class="fa fa-tasks"></i> <span>Barang Akan Dibeli</span>
                     </a>
                 </li>

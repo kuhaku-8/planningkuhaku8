@@ -13,7 +13,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Barang Yang Telah Dibeli</title>
+    <title>Home</title>
     <?php include '../config/top.php'; ?>
 </head>
 <!-- ADD THE CLASS fixed TO GET A FIXED HEADER AND SIDEBAR LAYOUT -->
@@ -41,17 +41,17 @@
                     </a>
                     <ul class="treeview-menu">
                         <li><a href="../user/financial.php"><i class="fa fa-eye"></i>Lihat</a></li>
-                        <li><a href="../user/add.php"><i class="fa fa-plus"></i>Tambah</a></li>
-                        <li><a href="../user/minus.php"><i class="fa fa-minus"></i>Kurangi</a></li>
+                        <li><a href="../application/owe.php"><i class="fa fa-plus"></i>Daftar Yang Berutang</a></li>
+                        <li><a href="../application/debt.php"><i class="fa fa-minus"></i>Daftar Hutang</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="./buy.php">
+                    <a href="../application/buy.php">
                         <i class="fa fa-tasks"></i> <span>Barang Akan Dibeli</span>
                     </a>
                 </li>
                 <li>
-                    <a href="./history.php">
+                    <a href="../application/history.php">
                         <i class="fa fa-check-circle"></i> <span>Barang Sudah Dibeli</span>
                     </a>
                 </li>
@@ -61,7 +61,7 @@
     </aside>
 
     <!-- =============================================== -->
-
+    <?php include '../config/count.php'; ?>
     <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
@@ -86,7 +86,7 @@
       <!-- Default box -->
       <div class="box">
         <div class="box-header with-border">
-          <h3 class="box-title">Title</h3>
+          <h3 class="box-title">Total Keuangan</h3>
 
           <div class="box-tools pull-right">
             <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
@@ -96,7 +96,59 @@
           </div>
         </div>
         <div class="box-body">
-          Start creating your amazing application!
+            <!-- Main content -->
+            <div class="col-lg-3 col-xs-6">
+                <!-- small box -->
+                <div class="small-box bg-aqua">
+                    <div class="inner">
+                        <h3>Rp <?php echo number_format("$total_keseluruhan",0,",",".") ?></h3>
+                        <p>Total Yang Dimiliki</p>
+                    </div>
+                    <div class="icon">
+                        <i class="ion ion-bag"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- ./col -->
+            <div class="col-lg-3 col-xs-6">
+                <!-- small box -->
+                <div class="small-box bg-green">
+                    <div class="inner">
+                        <h3>53<sup style="font-size: 20px">%</sup></h3>
+                        <p>Keuntungan Pekerjaan</p>
+                    </div>
+                    <div class="icon">
+                        <i class="ion ion-stats-bars"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- ./col -->
+            <div class="col-lg-3 col-xs-6">
+                <!-- small box -->
+                <div class="small-box bg-yellow">
+                    <div class="inner">
+                        <h3><?php echo "$banyak_yang_hutang_hitung"; ?></h3>
+                        <p>Orang Yang Berhutang</p>
+                    </div>
+                    <div class="icon">
+                        <i class="ion ion-person-add"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- ./col -->
+            <div class="col-lg-3 col-xs-6">
+                <!-- small box -->
+                <div class="small-box bg-red">
+                    <div class="inner">
+                        <h3><?php echo "$banyak_berhutang_hitung"; ?></h3>
+                        <p>Hutang Kepada Orang</p>
+                    </div>
+                    <div class="icon">
+                        <i class="ion ion-pie-graph"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- ./col -->
         </div>
         <!-- /.box-body -->
         <div class="box-footer">
@@ -109,7 +161,6 @@
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-
     <?php include '../config/footer.php'; ?>
     <?php include '../config/bottom.php'; ?>
 </body>

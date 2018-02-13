@@ -18,9 +18,17 @@
 	$num_results_dibeli = $result_dibeli->num_rows;
 
 	//tampil data history
-	$query_sudah = "select * from barang_punya";
+	$query_sudah = "select * from barang_punya ORDER BY id DESC";
 	$result_sudah = $mysqli->query($query_sudah);
 	$num_results_sudah = $result_sudah->num_rows;
+
+    $query_yang_hutang = "select * from yang_hutang ORDER BY id_yang_hutang DESC";
+    $result_yang_hutang = $mysqli->query($query_yang_hutang);
+    $num_results_yang_hutang = $result_yang_hutang->num_rows;
+
+    $query_berhutang = "select * from berhutang";
+    $result_berhutang = $mysqli->query($query_berhutang);
+    $num_results_berhutang = $result_berhutang->num_rows;
 
 	$action = isset($_POST['action']) ? $_POST['action'] : "";
 

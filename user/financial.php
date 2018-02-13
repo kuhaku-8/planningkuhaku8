@@ -32,10 +32,18 @@
             <?php include '../config/sidebar_user.php'; ?>
             <!-- sidebar menu: : style can be found in sidebar.less -->
             <ul class="sidebar-menu" data-widget="tree">
-                <li class="active">
-                    <a>
+                <li class="treeview active">
+                    <a href="#">
                         <i class="fa fa-money"></i> <span>Keuangan</span>
+                        <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
                     </a>
+                    <ul class="treeview-menu">
+                        <li class="active"><a><i class="fa fa-eye"></i>Lihat</a></li>
+                        <li><a href="../application/owe.php"><i class="fa fa-plus"></i>Daftar Yang Berutang</a></li>
+                        <li><a href="../application/debt.php"><i class="fa fa-minus"></i>Daftar Hutang</a></li>
+                    </ul>
                 </li>
                 <li>
                     <a href="../application/buy.php">
@@ -68,81 +76,6 @@
             </ol>
         </section>
 
-        <!-- Main content -->
-	    <section class="content">
-	      <!-- Small boxes (Stat box) -->
-	      <div class="row">
-	        <div class="col-lg-3 col-xs-6">
-	          <!-- small box -->
-	          <div class="small-box bg-aqua">
-	            <div class="inner">
-	              <h3>Rp <?php echo number_format("$total_keseluruhan",0,",",".") ?></h3>
-
-	              <p>Total Yang Dimiliki</p>
-	            </div>
-	            <div class="icon">
-	              <i class="ion ion-bag"></i>
-	            </div>
-	            <div class="small-box-footer">
-	            	<button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#tambah_tunai">
-                        <i class="fa fa-plus"></i>&nbsp&nbspTambah
-                    </button>
-                    <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#kurangi_tunai">
-                        <i class="fa fa-minus"></i>&nbsp&nbspKurangi
-                    </button>
-	          	</div>
-	          </div>
-	        </div>
-	        <!-- ./col -->
-	        <div class="col-lg-3 col-xs-6">
-	          <!-- small box -->
-	          <div class="small-box bg-green">
-	            <div class="inner">
-	              <h3>53<sup style="font-size: 20px">%</sup></h3>
-
-	              <p>Keuntungan Pekerjaan</p>
-	            </div>
-	            <div class="icon">
-	              <i class="ion ion-stats-bars"></i>
-	            </div>
-	            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-	          </div>
-	        </div>
-	        <!-- ./col -->
-	        <div class="col-lg-3 col-xs-6">
-	          <!-- small box -->
-	          <div class="small-box bg-yellow">
-	            <div class="inner">
-	              <h3><?php echo "$banyak_yang_hutang"; ?></h3>
-
-	              <p>Orang Yang Berhutang</p>
-	            </div>
-	            <div class="icon">
-	              <i class="ion ion-person-add"></i>
-	            </div>
-	            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-	          </div>
-	        </div>
-	        <!-- ./col -->
-	        <div class="col-lg-3 col-xs-6">
-	          <!-- small box -->
-	          <div class="small-box bg-red">
-	            <div class="inner">
-	              <h3><?php echo "$banyak_berhutang"; ?></h3>
-
-	              <p>Hutang Kepada Orang</p>
-	            </div>
-	            <div class="icon">
-	              <i class="ion ion-pie-graph"></i>
-	            </div>
-	            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-	          </div>
-	        </div>
-	        <!-- ./col -->
-	      </div>
-	      <!-- /.row -->                           
-        </section>
-        <!-- /.content -->
     </div>
     <!-- /.content-wrapper -->
 
