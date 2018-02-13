@@ -40,18 +40,18 @@
                     </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="../user/financial.php"><i class="fa fa-eye"></i>Lihat</a></li>
-                        <li><a href="../application/owe.php"><i class="fa fa-plus"></i>Daftar Yang Berutang</a></li>
-                        <li><a href="../application/debt.php"><i class="fa fa-minus"></i>Daftar Hutang</a></li>
+                        <li><a href="./financial_index.php"><i class="fa fa-eye"></i>Lihat</a></li>
+                        <li><a href="./financial_owe_index.php"><i class="fa fa-plus"></i>Daftar Yang Berutang</a></li>
+                        <li><a href="./financial_debt_index.php"><i class="fa fa-minus"></i>Daftar Hutang</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="../application/buy.php">
+                    <a href="./buy_index.php">
                         <i class="fa fa-tasks"></i> <span>Barang Akan Dibeli</span>
                     </a>
                 </li>
                 <li>
-                    <a href="../application/history.php">
+                    <a href="./history_index.php">
                         <i class="fa fa-check-circle"></i> <span>Barang Sudah Dibeli</span>
                     </a>
                 </li>
@@ -71,7 +71,7 @@
         <small>Blank example to the fixed layout</small>
       </h1>
       <ol class="breadcrumb">
-        <li><i class="fa fa-home"></i> &nbspHome</li>
+        <li><a><i class="fa fa-home"></i>Home</a></li>
       </ol>
     </section>
 

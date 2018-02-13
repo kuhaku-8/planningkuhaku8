@@ -41,17 +41,17 @@
                     </a>
                     <ul class="treeview-menu">
                         <li class="active"><a><i class="fa fa-eye"></i>Lihat</a></li>
-                        <li><a href="../application/owe.php"><i class="fa fa-plus"></i>Daftar Yang Berutang</a></li>
-                        <li><a href="../application/debt.php"><i class="fa fa-minus"></i>Daftar Hutang</a></li>
+                        <li><a href="./financial_owe_index.php"><i class="fa fa-plus"></i>Daftar Yang Berutang</a></li>
+                        <li><a href="./financial_debt_index.php"><i class="fa fa-minus"></i>Daftar Hutang</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="../application/buy.php">
+                    <a href="./buy_index.php">
                         <i class="fa fa-tasks"></i> <span>Barang Akan Dibeli</span>
                     </a>
                 </li>
                 <li>
-                    <a href="../application/history.php">
+                    <a href="./history_index.php">
                         <i class="fa fa-check-circle"></i> <span>Barang Sudah Dibeli</span>
                     </a>
                 </li>
@@ -71,8 +71,9 @@
                 <small></small>
             </h1>
             <ol class="breadcrumb">
-                <li><a href="../application/home.php"><i class="fa fa-home"></i>Home</a></li>
-                <li class="active">Keuangan</li>
+                <li><a href="./home.php"><i class="fa fa-home"></i>Home</a></li>
+                <li><a>Keuangan</a></li>
+                <li class="active">Lihat</li>
             </ol>
         </section>
 
@@ -90,7 +91,7 @@
                     <span aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title">Tambahan Jumlah Uang Tunai</h4>
             </div>
-            <?php include './add.php'; ?>
+            <?php include './financial_cash_add.php'; ?>
         </div>
         <!-- /.modal-content -->
     </div>
@@ -104,7 +105,7 @@
                     <span aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title">Kurangi Jumlah Uang Tunai</h4>
             </div>
-            <?php include './minus.php'; ?>
+            <?php include './financial_cash_minus.php'; ?>
         </div>
         <!-- /.modal-content -->
     </div>

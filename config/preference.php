@@ -42,10 +42,10 @@
 
 
 	    if($mysqli->query($query)) {
-	    	echo "<script>document.location='./buy.php';alert('Barang Telah Ditambahkan!')</script>";
+	    	echo "<script>document.location='./buy_index.php';alert('Barang Telah Ditambahkan!')</script>";
 	    }
 	    else{
-	        echo "<script>document.location='./buy.php';alert('Database Error! Barang Tidak Dapat Ditambahkan!')</script>";
+	        echo "<script>document.location='./buy_index.php';alert('Database Error! Barang Tidak Dapat Ditambahkan!')</script>";
 	    }
 	    $mysqli->close();
 	}
@@ -59,10 +59,10 @@
     	where id='".$mysqli->real_escape_string($_REQUEST['id'])."'";
     	
     	if($mysqli->query($query)) {
-    		echo "<script>document.location='./buy.php';alert('Barang Telah Diubah!')</script>";
+    		echo "<script>document.location='./buy_index.php';alert('Barang Telah Diubah!')</script>";
     	}
     	else{
-    		echo "<script>document.location='./buy.php';alert('Database Error! Barang Tidak Dapat Diubah!')</script>";
+    		echo "<script>document.location='./buy_index.php';alert('Database Error! Barang Tidak Dapat Diubah!')</script>";
     	}
 	}
 ?>

@@ -29,7 +29,7 @@
     </div>
     <div class="login-box-body">
         <p class="login-box-msg">Login Untuk Memulai Sesi!</p>
-        <form action="./user/logincheck.php" method="post">
+        <form action="config/logincheck.php" method="post">
             <div class="form-group has-feedback">
                 <input type="username" name="username" class="form-control" placeholder="username">
                 <span class="glyphicon glyphicon-user form-control-feedback"></span>
