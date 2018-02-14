@@ -6,6 +6,6 @@
     $row_pengguna = $result_login->fetch_assoc();
     $namalengkap = $row_pengguna['namalengkap'];
     $namamedium = $row_pengguna['namamedium'];
-    $id = $row_pengguna['id'];
+    $id_pengguna = $row_pengguna['id_pengguna'];
     $saldo_tunai = $row_pengguna['saldo_tunai'];
 ?>

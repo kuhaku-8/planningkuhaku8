@@ -40,9 +40,29 @@
                     </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="./financial_index.php"><i class="fa fa-eye"></i>Lihat</a></li>
-                        <li><a href="./financial_owe_index.php"><i class="fa fa-plus"></i>Daftar Yang Berutang</a></li>
-                        <li><a href="./financial_debt_index.php"><i class="fa fa-minus"></i>Daftar Hutang</a></li>
+                        <li><a href="./financial_index.php"><i class="fa fa-balance-scale"></i> Lihat</a></li>
+                        <li class="treeview">
+                            <a href="#"><i class="fa fa-users"></i> Daftar Yang Berhutang
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a href="./financial_owe_index.php"><i class="fa fa-th-list"></i> Lihat</a></li>
+                                <li><a href="./financial_owe_history.php"><i class="fa fa-check"></i> Sudah Lunas</a></li>
+                            </ul>
+                        </li>
+                        <li class="treeview">
+                            <a href="#"><i class="fa fa-users"></i> Daftar Hutang
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a href="./financial_debt_index.php"><i class="fa fa-th-list"></i> Lihat</a></li>
+                                <li><a href="./financial_debt_history.php"><i class="fa fa-check"></i> Sudah Lunas</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
                 <li>
@@ -51,7 +71,7 @@
                     </a>
                 </li>
                 <li class="active">
-                    <a>
+                    <a href="#">
                         <i class="fa fa-check-circle"></i> <span>Barang Sudah Dibeli</span>
                     </a>
                 </li>

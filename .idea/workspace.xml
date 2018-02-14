@@ -2,20 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69c1681c-d37b-4563-b2d0-860ff60983d2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/financial_debt_create.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/financial_owe_create.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/buy_create.php" afterPath="$PROJECT_DIR$/application/buy_create.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/barang_punya/1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/barang_punya/2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/barang_punya/3.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/buy_index.php" afterPath="$PROJECT_DIR$/application/buy_index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/financial_debt_index.php" afterPath="$PROJECT_DIR$/application/financial_debt_index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/financial_index.php" afterPath="$PROJECT_DIR$/application/financial_index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/financial_owe_index.php" afterPath="$PROJECT_DIR$/application/financial_owe_index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/bottom.php" afterPath="$PROJECT_DIR$/config/bottom.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/history_index.php" afterPath="$PROJECT_DIR$/application/history_index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/history_more.php" afterPath="$PROJECT_DIR$/application/history_more.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/home.php" afterPath="$PROJECT_DIR$/application/home.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/header.php" afterPath="$PROJECT_DIR$/config/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/logincheck.php" afterPath="$PROJECT_DIR$/config/logincheck.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/preference.php" afterPath="$PROJECT_DIR$/config/preference.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/profil.php" afterPath="$PROJECT_DIR$/config/profil.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/sidebar_user.php" afterPath="$PROJECT_DIR$/config/sidebar_user.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/top.php" afterPath="$PROJECT_DIR$/config/top.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,100 +25,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="buy_index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/buy_index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="178" column="65" lean-forward="false" selection-start-line="178" selection-start-column="65" selection-end-line="178" selection-end-column="65" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="general.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../../../../AdminLTE-2.4.3/pages/forms/general.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
-              <caret line="484" column="17" lean-forward="true" selection-start-line="464" selection-start-column="12" selection-end-line="484" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="54" column="91" lean-forward="false" selection-start-line="54" selection-start-column="91" selection-end-line="54" selection-end-column="91" />
+            <state relative-caret-position="244">
+              <caret line="115" column="16" lean-forward="false" selection-start-line="108" selection-start-column="10" selection-end-line="115" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="financial_debt_index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/financial_debt_index.php">
+      <file leaf-file-name="history_more.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/history_more.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="88" column="64" lean-forward="false" selection-start-line="88" selection-start-column="64" selection-end-line="88" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="financial_debt_create.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/financial_debt_create.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="48" column="50" lean-forward="false" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="financial_owe_create.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/financial_owe_create.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="48" column="51" lean-forward="false" selection-start-line="48" selection-start-column="51" selection-end-line="48" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sidebar_user.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/sidebar_user.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="11" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="17" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="preference.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/preference.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="30" column="57" lean-forward="true" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
+            <state relative-caret-position="196">
+              <caret line="124" column="60" lean-forward="false" selection-start-line="124" selection-start-column="60" selection-end-line="124" selection-end-column="60" />
               <folding>
-                <marker date="1518588244359" expanded="true" signature="283:334" ph="select * fro... barang_akan_dibeli" />
-                <marker date="1518588244359" expanded="true" signature="476:519" ph="select * fro... barang_punya" />
-                <marker date="1518588244359" expanded="true" signature="643:693" ph="select * fro... yang_hutang" />
-                <marker date="1518588244359" expanded="true" signature="643:696" ph="select * fro... yang_hutang" />
-                <marker date="1518588244359" expanded="true" signature="849:872" ph="select * fro... berhutang" />
-                <marker date="1518588244359" expanded="true" signature="849:898" ph="select * fro... berhutang" />
-                <marker date="1518588244359" expanded="true" signature="1129:1356" ph="insert into barang_akan_dibeli... " />
-                <marker date="1518588244359" expanded="true" signature="1723:1952" ph="insert into yang_hutang... " />
-                <marker date="1518588244359" expanded="true" signature="1723:1953" ph="insert into yang_hutang... " />
-                <marker date="1518588244359" expanded="true" signature="1723:1954" ph="insert into yang_hutang... " />
-                <marker date="1518588244359" expanded="true" signature="1723:2151" ph="insert into yang_hutang... " />
-                <marker date="1518588244359" expanded="true" signature="1723:2152" ph="insert into yang_hutang... " />
-                <marker date="1518588244359" expanded="true" signature="2618:2850" ph="insert into berhutang... " />
-                <marker date="1518588244359" expanded="true" signature="2618:2851" ph="insert into berhutang... " />
-                <marker date="1518588244359" expanded="true" signature="2618:2948" ph="insert into berhutang... " />
-                <marker date="1518588244359" expanded="true" signature="2618:2949" ph="insert into berhutang... " />
-                <marker date="1518588244359" expanded="true" signature="2618:3048" ph="insert into berhutang... " />
-                <marker date="1518588244359" expanded="true" signature="3470:3757" ph="update baran... " />
+                <marker date="1518599232616" expanded="true" signature="179:274" ph="select * fro... barang_punya" />
               </folding>
             </state>
           </provider>
@@ -142,6 +64,8 @@
       <find>date pic</find>
       <find>datepicker</find>
       <find>berhutang</find>
+      <find>&lt;a&gt;</find>
+      <find>Carousel</find>
     </findStrings>
     <replaceStrings>
       <replace>buy</replace>
@@ -149,6 +73,7 @@
       <replace>dasboard</replace>
       <replace>dashboard</replace>
       <replace>yang_hutang</replace>
+      <replace>&lt;a href=&quot;#&quot;&gt;</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -168,17 +93,12 @@
         <option value="$PROJECT_DIR$/application/update.php" />
         <option value="$PROJECT_DIR$/user/financial.php" />
         <option value="$PROJECT_DIR$/application/buy.php" />
-        <option value="$PROJECT_DIR$/config/profil.php" />
         <option value="$PROJECT_DIR$/config/count.php" />
         <option value="$PROJECT_DIR$/application/owe.php" />
         <option value="$PROJECT_DIR$/application/debt.php" />
         <option value="D:/Downloads/Programs/AdminLTE-2.4.3/pages/UI/general.html" />
         <option value="$PROJECT_DIR$/application/history.php" />
         <option value="$PROJECT_DIR$/application/buy_delete.php" />
-        <option value="$PROJECT_DIR$/application/financial_index.php" />
-        <option value="$PROJECT_DIR$/application/history_index.php" />
-        <option value="$PROJECT_DIR$/application/home.php" />
-        <option value="$PROJECT_DIR$/config/header.php" />
         <option value="$PROJECT_DIR$/config/logout.php" />
         <option value="$PROJECT_DIR$/config/logincheck.php" />
         <option value="$PROJECT_DIR$/index.php" />
@@ -188,10 +108,16 @@
         <option value="$PROJECT_DIR$/application/financial_debt_create.php" />
         <option value="$PROJECT_DIR$/application/financial_owe_create.php" />
         <option value="$PROJECT_DIR$/application/buy_create.php" />
-        <option value="$PROJECT_DIR$/config/sidebar_user.php" />
-        <option value="$PROJECT_DIR$/application/financial_debt_index.php" />
         <option value="$PROJECT_DIR$/application/financial_owe_index.php" />
+        <option value="$PROJECT_DIR$/application/financial_index.php" />
+        <option value="$PROJECT_DIR$/application/history_index.php" />
+        <option value="$PROJECT_DIR$/application/financial_debt_index.php" />
+        <option value="$PROJECT_DIR$/application/home.php" />
+        <option value="$PROJECT_DIR$/config/sidebar_user.php" />
+        <option value="$PROJECT_DIR$/config/profil.php" />
+        <option value="$PROJECT_DIR$/config/header.php" />
         <option value="$PROJECT_DIR$/application/buy_index.php" />
+        <option value="$PROJECT_DIR$/application/history_more.php" />
       </list>
     </option>
   </component>
@@ -294,16 +220,15 @@
       <workItem from="1518525336421" duration="16000" />
       <workItem from="1518525382364" duration="4291000" />
       <workItem from="1518537982969" duration="113000" />
-      <workItem from="1518576799136" duration="10322000" />
+      <workItem from="1518576799136" duration="18843000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57428000" />
+    <option name="totallyTimeSpent" value="65949000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17203514" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -357,7 +282,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/Downloads/Programs/AdminLTE-2.4.3/pages/UI/modals.html" />
     <entry file="file://$PROJECT_DIR$/application/history.php" />
     <entry file="file://$PROJECT_DIR$/application/buy.php" />
     <entry file="file://$PROJECT_DIR$/application/home.php">
@@ -391,23 +315,7 @@
     <entry file="file://$PROJECT_DIR$/application/debt.php" />
     <entry file="file://$PROJECT_DIR$/application/owe.php" />
     <entry file="file://$PROJECT_DIR$/application/financial.php" />
-    <entry file="file://$PROJECT_DIR$/application/financial_cash_add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/financial_cash_minus.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/history_more.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -431,27 +339,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/profil.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="48" lean-forward="false" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Downloads/Programs/AdminLTE-2.4.3/pages/UI/general.html" />
     <entry file="file://$PROJECT_DIR$/application/buy_delete.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="52" lean-forward="false" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/buy_move.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="48" lean-forward="false" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
           <folding />
         </state>
       </provider>
@@ -484,22 +376,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/financial_index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="83" column="44" lean-forward="false" selection-start-line="83" selection-start-column="44" selection-end-line="83" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/history_index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1343">
-          <caret line="79" column="42" lean-forward="false" selection-start-line="79" selection-start-column="42" selection-end-line="79" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
@@ -524,9 +400,95 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/preference.php">
+    <entry file="file://$PROJECT_DIR$/config/top.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
+          <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/financial_owe_create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="48" column="51" lean-forward="false" selection-start-line="48" selection-start-column="51" selection-end-line="48" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/buy_create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="44" lean-forward="false" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/buy_move.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="48" lean-forward="false" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
+          <folding>
+            <marker date="1518576097868" expanded="true" signature="165:267" ph="select * fro... barang_akan_dibeli" />
+            <marker date="1518576097868" expanded="true" signature="437:635" ph="insert into barang_punya... " />
+            <marker date="1518576097868" expanded="true" signature="654:744" ph="delete from " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/financial_cash_add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1518576097874" expanded="true" signature="639:740" ph="update pengg... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/financial_debt_create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="48" column="50" lean-forward="false" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/financial_owe_index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="94" column="32" lean-forward="false" selection-start-line="94" selection-start-column="32" selection-end-line="94" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/history_index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="73" column="32" lean-forward="false" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/financial_debt_index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="48" column="32" lean-forward="true" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../AdminLTE-2.4.3/pages/forms/general.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3188">
+          <caret line="670" column="42" lean-forward="false" selection-start-line="670" selection-start-column="42" selection-end-line="670" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/preference.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
           <caret line="30" column="57" lean-forward="true" selection-start-line="30" selection-start-column="57" selection-end-line="30" selection-end-column="57" />
           <folding>
             <marker date="1518588244359" expanded="true" signature="283:334" ph="select * fro... barang_akan_dibeli" />
@@ -553,89 +515,69 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="61" column="51" lean-forward="false" selection-start-line="61" selection-start-column="51" selection-end-line="61" selection-end-column="51" />
+        <state relative-caret-position="267">
+          <caret line="43" column="72" lean-forward="false" selection-start-line="43" selection-start-column="72" selection-end-line="43" selection-end-column="72" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/top.php">
+    <entry file="file://$PROJECT_DIR$/config/profil.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/financial_owe_create.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" column="51" lean-forward="false" selection-start-line="48" selection-start-column="51" selection-end-line="48" selection-end-column="51" />
-          <folding />
+        <state relative-caret-position="136">
+          <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding>
+            <marker date="1518594542960" expanded="true" signature="63:112" ph="select * fro... pengguna" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/sidebar_user.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="11" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="17" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/financial_debt_create.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" column="50" lean-forward="false" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/financial_debt_index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="88" column="64" lean-forward="false" selection-start-line="88" selection-start-column="64" selection-end-line="88" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="54" column="91" lean-forward="false" selection-start-line="54" selection-start-column="91" selection-end-line="54" selection-end-column="91" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/financial_owe_index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="169" column="77" lean-forward="false" selection-start-line="169" selection-start-column="77" selection-end-line="169" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/buy_create.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="44" lean-forward="false" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+        <state relative-caret-position="34">
+          <caret line="2" column="60" lean-forward="true" selection-start-line="2" selection-start-column="60" selection-end-line="2" selection-end-column="60" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/buy_index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="178" column="65" lean-forward="false" selection-start-line="178" selection-start-column="65" selection-end-line="178" selection-end-column="65" />
+        <state relative-caret-position="204">
+          <caret line="109" column="37" lean-forward="true" selection-start-line="107" selection-start-column="28" selection-end-line="109" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../AdminLTE-2.4.3/pages/forms/general.html">
+    <entry file="file://$PROJECT_DIR$/application/financial_index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="484" column="17" lean-forward="true" selection-start-line="464" selection-start-column="12" selection-end-line="484" selection-end-column="17" />
+        <state relative-caret-position="-192">
+          <caret line="56" column="30" lean-forward="false" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="30" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="115" column="16" lean-forward="false" selection-start-line="108" selection-start-column="10" selection-end-line="115" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../AdminLTE-2.4.3/pages/UI/general.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="1131" column="37" lean-forward="true" selection-start-line="1131" selection-start-column="37" selection-end-line="1131" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/history_more.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="124" column="60" lean-forward="false" selection-start-line="124" selection-start-column="60" selection-end-line="124" selection-end-column="60" />
+          <folding>
+            <marker date="1518599232616" expanded="true" signature="179:274" ph="select * fro... barang_punya" />
+          </folding>
         </state>
       </provider>
     </entry>

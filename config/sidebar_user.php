@@ -1,6 +1,6 @@
 <div class="user-panel">
     <div class="pull-left image">
-        <img src="../src/profil/<?php echo "$id" ?>.jpg" class="img-circle" alt="User Image">
+        <img src="../src/profil/<?php echo "$id_pengguna" ?>.jpg" class="img-circle" alt="User Image">
     </div>
     <div class="pull-left info">
         <p><?php echo "$namamedium" ?></p>
