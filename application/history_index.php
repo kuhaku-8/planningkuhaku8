@@ -143,7 +143,7 @@
                                         </td>
                                         <td><a href="./history_more.php?id=<?php echo "$id" ?>" class="btn btn-info btn-sm"><i class="fa fa-search"></i> &nbspSelengkapnya</a></td>
                                     </tr>
-                                    <?php $no++; $total+=$jumlah; } ?>
+                                    <?php $no++; } ?>
                                 </tbody>
                                 <tfoot>
                                 <tr>

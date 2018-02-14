@@ -120,6 +120,7 @@
                                         <th>Status</th>
                                         <th>Tanggal (M/D/Y)</th>
                                         <th>Jumlah</th>
+                                        <th>Lunas</th>
                                         <th>Aksi</th>
                                     </tr>
                                     </thead>
@@ -135,6 +136,14 @@
                                                     <tr>
                                                         <td>Rp</td>
                                                         <td align="right"><?php echo number_format("$jumlah_berhutang",0,",",".") ?></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td>
+                                                <table width="90">
+                                                    <tr>
+                                                        <td>Rp</td>
+                                                        <td align="right"><?php echo number_format("$sisa_berhutang",0,",",".") ?></td>
                                                     </tr>
                                                 </table>
                                             </td>

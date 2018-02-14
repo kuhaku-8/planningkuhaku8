@@ -121,6 +121,7 @@ include '../config/profil.php';
                                         <th>Status</th>
                                         <th>Tanggal (M/D/Y)</th>
                                         <th>Jumlah</th>
+                                        <th>Belum Lunas</th>
                                         <th>Aksi</th>
                                     </tr>
                                     </thead>
@@ -136,6 +137,14 @@ include '../config/profil.php';
                                                     <tr>
                                                         <td>Rp</td>
                                                         <td align="right"><?php echo number_format("$jumlah_yang_hutang",0,",",".") ?></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td>
+                                                <table width="90">
+                                                    <tr>
+                                                        <td>Rp</td>
+                                                        <td align="right"><?php echo number_format("$sisa_yang_hutang",0,",",".") ?></td>
                                                     </tr>
                                                 </table>
                                             </td>

@@ -81,7 +81,7 @@ $vendor = $row['vendor'];
                         <i class="fa fa-tasks"></i> <span>Barang Akan Dibeli</span>
                     </a>
                 </li>
-                <li>
+                <li class="active">
                     <a href="./history_index.php">
                         <i class="fa fa-check-circle"></i> <span>Barang Sudah Dibeli</span>
                     </a>
@@ -103,7 +103,7 @@ $vendor = $row['vendor'];
             </h1>
             <ol class="breadcrumb">
                 <li><a href="./home.php"><i class="fa fa-home"></i>Home</a></li>
-                <li><a href="#">History</a></li>
+                <li><a href="./history_index.php">Barang Sudah Dibeli</a></li>
                 <li class="active">Selengkapnya</li>
             </ol>
         </section>
@@ -116,22 +116,22 @@ $vendor = $row['vendor'];
                         </div>
                         <!-- /.box-header -->
                         <div class="box-body">
+                            <?php if(file_exists("../src/barang_punya/$id/1.jpg")){ ?>
                             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                                 <ol class="carousel-indicators">
                                     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                                    <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
-                                    <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+                                    <?php $belakang=2; $kode=1; while(file_exists("../src/barang_punya/$id/$belakang.jpg")){ ?>
+                                    <li data-target="#carousel-example-generic" data-slide-to="<?php echo "$kode" ?>" class=""></li><?php $belakang++; $kode++; } ?>
                                 </ol>
                                 <div class="carousel-inner">
                                     <div class="item active">
                                         <img src="../src/barang_punya/<?php echo "$id" ?>/1.jpg" alt="First slide">
                                     </div>
+                                    <?php $belakang=2; while(file_exists("../src/barang_punya/$id/$belakang.jpg")){ ?>
                                     <div class="item">
-                                        <img src="../src/barang_punya/<?php echo "$id" ?>/2.jpg" alt="Second slide">
+                                        <img src="../src/barang_punya/<?php echo "$id" ?>/<?php echo "$belakang" ?>.jpg" alt="Second slide">
                                     </div>
-                                    <div class="item">
-                                        <img src="../src/barang_punya/<?php echo "$id" ?>/3.jpg" alt="Third slide">
-                                    </div>
+                                    <?php $belakang++; } ?>
                                 </div>
                                 <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
                                     <span class="fa fa-angle-left"></span>
@@ -140,6 +140,7 @@ $vendor = $row['vendor'];
                                     <span class="fa fa-angle-right"></span>
                                 </a>
                             </div>
+                            <?php }else{echo "Maaf! Gambar Tidak Tersedia!";} ?>
                         </div>
                         <!-- /.box-body -->
                     </div>
@@ -150,12 +151,6 @@ $vendor = $row['vendor'];
                     <div class="box">
                         <div class="box-header with-border">
                             <h3 class="box-title">Selengkapnya</h3>
-
-                            <div class="box-tools pull-right">
-                                <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
-                                    <i class="fa fa-minus"></i>
-                                </button>
-                            </div>
                         </div>
                         <!-- /.box-header -->
                         <div class="box-body">
@@ -187,10 +182,14 @@ $vendor = $row['vendor'];
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td><a href="<?php echo "$web_resmi" ?>" target="_blank"><?php echo "$vendor" ?></a></td>
-                                            <td><?php echo "$qty" ?></td>
+
+                                            <td>
+                                                <?php if(!empty($web_resmi)){?><a href="<?php echo "$web_resmi" ?>" target="_blank"><?php } ?><?php if(!empty($vendor)){echo "$vendor";} else{echo "Tidak Ada";} ?><?php if(!empty($web_resmi)){?></a><?php } ?>
+                                            </td>
+                                            <td><?php echo "$qty" ?> Buah</td>
                                         </tr>
                                     </tbody>
+                                    <?php if(!empty($spek)){ ?>
                                     <thead>
                                         <tr>
                                             <th colspan="2">Spek</th>
@@ -201,6 +200,7 @@ $vendor = $row['vendor'];
                                             <td colspan="2"><?php echo "$spek" ?></td>
                                         </tr>
                                     </tbody>
+                                    <?php } ?>
                                 </table>
                             </div>
                             <!-- /.box-body -->
