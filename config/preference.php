@@ -22,11 +22,11 @@
 	$result_sudah = $mysqli->query($query_sudah);
 	$num_results_sudah = $result_sudah->num_rows;
 
-    $query_yang_hutang = "select * from yang_hutang ORDER BY id_yang_hutang DESC";
+    $query_yang_hutang = "select * from yang_hutang ORDER BY id_yang_hutang ASC ";
     $result_yang_hutang = $mysqli->query($query_yang_hutang);
     $num_results_yang_hutang = $result_yang_hutang->num_rows;
 
-    $query_berhutang = "select * from berhutang";
+    $query_berhutang = "select * from berhutang ORDER BY id_berhutang ASC ";
     $result_berhutang = $mysqli->query($query_berhutang);
     $num_results_berhutang = $result_berhutang->num_rows;
 
@@ -40,15 +40,50 @@
 	    harga = '".$mysqli->real_escape_string($_POST['harga'])."',
 	    qty = '".$mysqli->real_escape_string($_POST['qty'])."'";
 
-
 	    if($mysqli->query($query)) {
 	    	echo "<script>document.location='./buy_index.php';alert('Barang Telah Ditambahkan!')</script>";
 	    }
 	    else{
 	        echo "<script>document.location='./buy_index.php';alert('Database Error! Barang Tidak Dapat Ditambahkan!')</script>";
 	    }
-	    $mysqli->close();
 	}
+
+	//tambah_yang_hutang
+    if($action=='create_owe'){
+        $query = "insert into yang_hutang
+            set
+            nama_yang_hutang = '".$mysqli->real_escape_string($_POST['nama_yang_hutang'])."',
+            jumlah_yang_hutang = '".$mysqli->real_escape_string($_POST['jumlah_yang_hutang'])."',
+            status_yang_hutang = '".$mysqli->real_escape_string($_POST['status_yang_hutang'])."',
+            tanggal_yang_hutang = '".$mysqli->real_escape_string($_POST['tanggal_yang_hutang'])."'";
+
+        if($mysqli->query($query)) {
+            echo "<script>document.location='./financial_owe_index.php';alert('Orang Yang Berhutang Telah Ditambahkan!')</script>";
+        }
+        else{
+            echo "<script>document.location='./financial_owe_index.php';alert('Database Error! Orang Yang Berhutang Tidak Dapat Ditambahkan!')</script>";
+        }
+        $mysqli->close();
+    }
+
+    //tambah_berhutang
+    if($action=='create_debt'){
+        $query = "insert into berhutang
+                set
+                nama_berhutang = '".$mysqli->real_escape_string($_POST['nama_berhutang'])."',
+                jumlah_berhutang = '".$mysqli->real_escape_string($_POST['jumlah_berhutang'])."',
+                status_berhutang = '".$mysqli->real_escape_string($_POST['status_berhutang'])."',
+                tanggal_berhutang = '".$mysqli->real_escape_string($_POST['tanggal_berhutang'])."'";
+
+        if($mysqli->query($query)) {
+            echo "<script>document.location='./financial_debt_index.php';alert('Hutang Telah Ditambahkan!')</script>";
+        }
+        else{
+            echo "<script>document.location='./financial_debt_index.php';alert('Database Error! Hutang Tidak Dapat Ditambahkan!')</script>";
+        }
+        $mysqli->close();
+    }
+
 	//ubah
 	else if($action == "update"){
     	$query = "update barang_akan_dibeli

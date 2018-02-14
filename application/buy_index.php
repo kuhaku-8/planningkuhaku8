@@ -86,7 +86,7 @@
                         </div>
                         <div class="box-body">
                             <button type="button" class="btn btn-info" data-toggle="modal" data-target="#tambah">
-                                <i class="fa fa-plus"></i>&nbsp&nbspTambah
+                                <i class="fa fa-cart-plus"></i> &nbspTambah
                             </button>
                         </div>
                         <!-- /.box-header -->
@@ -128,9 +128,9 @@
                                         </td>
                                         <td>
                                             <div class="btn-group">
-                                                <a href="./buy_update.php?id=<?php echo "$id" ?>" class="btn btn-warning btn-sm"><i class="fa fa-edit"></i> &nbspEdit</a>
-                                                <a href="./buy_delete.php?id=<?php echo "$id" ?>" class="btn btn-danger btn-sm" onclick="return confirm('Yakin Ingin Menghapus <?php echo "$nama" ?>?')"><i class="fa fa-trash"></i> &nbspDelete</a>
-                                                <a href="./buy_move.php?id=<?php echo "$id" ?>" class="btn btn-success btn-sm" onclick="return confirm('Yakin <?php echo "$nama" ?> Sudah Dibeli?')"><i class="fa fa-share"></i> &nbspMove</a>
+                                                <a href="./buy_update.php?id=<?php echo "$id" ?>" class="btn btn-warning btn-sm"><i class="fa fa-edit"></i> &nbspUbah</a>
+                                                <a href="./buy_delete.php?id=<?php echo "$id" ?>" class="btn btn-danger btn-sm" onclick="return confirm('Yakin Ingin Menghapus <?php echo "$nama" ?>?')"><i class="fa fa-trash"></i> &nbspHapus</a>
+                                                <a href="./buy_move.php?id=<?php echo "$id" ?>" class="btn btn-success btn-sm" onclick="return confirm('Yakin <?php echo "$nama" ?> Sudah Dibeli?')"><i class="fa fa-share"></i> &nbspSudah Dibeli</a>
                                             </div>
                                         </td>
                                     </tr>
@@ -176,7 +176,7 @@
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Tambahkan Barang</h4>
+                <h4 class="modal-title"><i class="fa fa-cart-plus"></i> &nbspTambahkan Barang</h4>
             </div>
             <?php include './buy_create.php'; ?>
         </div>

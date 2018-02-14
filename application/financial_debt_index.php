@@ -86,7 +86,7 @@
                         </div>
                         <div class="box-body">
                             <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#tambah">
-                                <i class="fa fa-plus"></i>&nbsp&nbspTambah
+                                <i class="fa fa-user-plus"></i> &nbspTambah
                             </button>
                         </div>
                         <!-- /.box-header -->
@@ -97,6 +97,8 @@
                                     <tr>
                                         <th>No</th>
                                         <th>Nama</th>
+                                        <th>Status</th>
+                                        <th>Tanggal (M/D/Y)</th>
                                         <th>Jumlah</th>
                                         <th>Aksi</th>
                                     </tr>
@@ -106,6 +108,8 @@
                                         <tr>
                                             <td><?php echo "$no" ?></td>
                                             <td><?php echo "$nama_berhutang" ?></td>
+                                            <td><?php echo "$status_berhutang" ?></td>
+                                            <td><?php echo "$tanggal_berhutang" ?></td>
                                             <td>
                                                 <table width="90">
                                                     <tr>
@@ -115,7 +119,9 @@
                                                 </table>
                                             </td>
                                             <td>
-
+                                                <a href="./financial_debt_update.php?id=<?php echo "$id_berhutang" ?>" class="btn btn-warning btn-sm"><i class="fa fa-edit"></i> &nbspEdit</a>
+                                                <a href="./financial_debt_delete.php?id=<?php echo "$id_berhutang" ?>" class="btn btn-danger btn-sm" onclick="return confirm('Yakin Ingin Menghapus <?php echo "$nama_berhutang" ?>?')"><i class="fa fa-trash"></i> &nbspDelete</a>
+                                                <a href="./financial_debt_move.php?id=<?php echo "$id_berhutang" ?>" class="btn btn-success btn-sm" onclick="return confirm('Yakin <?php echo "$nama_berhutang" ?> Sudah Lunas?')"><i class="fa fa-share"></i> &nbspMove</a>
                                             </td>
                                         </tr>
                                         <?php $no++;} ?>
@@ -124,6 +130,8 @@
                                     <tr>
                                         <th>No</th>
                                         <th>Nama</th>
+                                        <th>Status</th>
+                                        <th>Tanggal (M/D/Y)</th>
                                         <th>Jumlah</th>
                                         <th>Aksi</th>
                                     </tr>
@@ -158,7 +166,7 @@
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Tambahkan Barang</h4>
+                <h4 class="modal-title"><i class="fa fa-user-plus"></i> &nbspTambahkan Hutang</h4>
             </div>
             <?php include './financial_debt_create.php'; ?>
         </div>

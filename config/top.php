@@ -8,6 +8,16 @@
 <link rel="stylesheet" href="../src/dashboard/Ionicons/css/ionicons.min.css">
 <!-- DataTables -->
 <link rel="stylesheet" href="../src/dashboard/datatables.net-bs/css/dataTables.bootstrap.min.css">
+<!-- bootstrap datepicker -->
+<link rel="stylesheet" href="../src/dashboard/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+<!-- iCheck for checkboxes and radio inputs -->
+<link rel="stylesheet" href="../src/plugins/iCheck/all.css">
+<!-- Bootstrap Color Picker -->
+<link rel="stylesheet" href="../src/dashboard/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css">
+<!-- Bootstrap time Picker -->
+<link rel="stylesheet" href="../src/plugins/timepicker/bootstrap-timepicker.min.css">
+<!-- Select2 -->
+<link rel="stylesheet" href="../src/dashboard/select2/dist/css/select2.min.css">
 <!-- Theme style -->
 <link rel="stylesheet" href="../src/dist/css/AdminLTE.min.css">
 <!-- AdminLTE Skins. Choose a skin from the css/skins folder instead of downloading all of them to reduce the load. -->

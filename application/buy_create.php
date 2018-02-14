@@ -3,15 +3,30 @@
     <div class="modal-body">
         <div class="form-group">
             <label>Nama</label>
-            <input type="text" class="form-control" name="nama" placeholder="Masukkan Nama Barang" required>
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <i class="fa fa-inbox"></i>
+                </div>
+                <input type="text" class="form-control" name="nama" placeholder="Masukkan Nama Barang" required>
+            </div>
         </div>
         <div class="form-group">
             <label>Harga</label>
-            <input type="number" class="form-control" name="harga" placeholder="Masukkan harga" required>
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <i class="fa fa-money"></i>
+                </div>
+                <input type="number" class="form-control" name="harga" placeholder="Masukkan Harga" required>
+            </div>
         </div>
         <div class="form-group">
             <label>Qty</label>
-            <input type="number" class="form-control" name="qty" value="1" placeholder="Masukkan Banyak Barang" required>
+            <div class="input-group">
+                <div class="input-group-addon">
+                    <i class="fa fa-database"></i>
+                </div>
+                <input type="number" class="form-control" name="qty" value="1" placeholder="Masukkan Banyak Barang" required>
+            </div>
         </div>
     </div>
     <!-- /.box-body -->

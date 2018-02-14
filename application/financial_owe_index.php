@@ -87,7 +87,7 @@ include '../config/profil.php';
                         </div>
                         <div class="box-body">
                             <button type="button" class="btn btn-success" data-toggle="modal" data-target="#tambah">
-                                <i class="fa fa-plus"></i>&nbsp&nbspTambah
+                                <i class="fa fa-user-plus"></i> &nbspTambah
                             </button>
                         </div>
                         <!-- /.box-header -->
@@ -98,6 +98,8 @@ include '../config/profil.php';
                                     <tr>
                                         <th>No</th>
                                         <th>Nama</th>
+                                        <th>Status</th>
+                                        <th>Tanggal (M/D/Y)</th>
                                         <th>Jumlah</th>
                                         <th>Aksi</th>
                                     </tr>
@@ -107,6 +109,8 @@ include '../config/profil.php';
                                         <tr>
                                             <td><?php echo "$no" ?></td>
                                             <td><?php echo "$nama_yang_hutang" ?></td>
+                                            <td><?php echo "$status_yang_hutang" ?></td>
+                                            <td><?php echo "$tanggal_yang_hutang" ?></td>
                                             <td>
                                                 <table width="90">
                                                     <tr>
@@ -116,7 +120,9 @@ include '../config/profil.php';
                                                 </table>
                                             </td>
                                             <td>
-
+                                                <a href="./financial_owe_update.php?id=<?php echo "$id_yang_hutang" ?>" class="btn btn-warning btn-sm"><i class="fa fa-edit"></i> &nbspEdit</a>
+                                                <a href="./financial_owe_delete.php?id=<?php echo "$id_yang_hutang" ?>" class="btn btn-danger btn-sm" onclick="return confirm('Yakin Ingin Menghapus <?php echo "$nama_yang_hutang" ?>?')"><i class="fa fa-trash"></i> &nbspDelete</a>
+                                                <a href="./financial_owe_move.php?id=<?php echo "$id_yang_hutang" ?>" class="btn btn-success btn-sm" onclick="return confirm('Yakin <?php echo "$nama_yang_hutang" ?> Sudah Lunas?')"><i class="fa fa-share"></i> &nbspMove</a>
                                             </td>
                                         </tr>
                                         <?php $no++;} ?>
@@ -125,6 +131,8 @@ include '../config/profil.php';
                                     <tr>
                                         <th>No</th>
                                         <th>Nama</th>
+                                        <th>Status</th>
+                                        <th>Tanggal (M/D/Y)</th>
                                         <th>Jumlah</th>
                                         <th>Aksi</th>
                                     </tr>
@@ -159,7 +167,7 @@ include '../config/profil.php';
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Tambahkan Barang</h4>
+                <h4 class="modal-title"><i class="fa fa-user-plus"></i> &nbspTambahkan Yang Berhutang</h4>
             </div>
             <?php include './financial_owe_create.php'; ?>
         </div>
