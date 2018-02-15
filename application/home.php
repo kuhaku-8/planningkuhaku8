@@ -97,12 +97,6 @@
 
     <!-- Main content -->
     <section class="content">
-      <div class="callout callout-info">
-        <h4>Tip!</h4>
-
-        <p>Add the fixed class to the body tag to get this layout. The fixed layout is your best option if your sidebar
-          is bigger than your content because it prevents extra unwanted scrolling.</p>
-      </div>
       <!-- Default box -->
       <div class="box">
         <div class="box-header with-border">
@@ -122,12 +116,12 @@
                 <div class="small-box bg-aqua">
                     <div class="inner">
                         <h3>Rp <?php echo number_format("$total_keseluruhan",0,",",".") ?></h3>
-                        <p>Total Yang Dimiliki</p>
+                        <p>Total Keseluruhan</p>
                     </div>
                     <div class="icon">
                         <i class="ion ion-cash"></i>
                     </div>
-                    <a href="./financial_index.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                    <a href="./financial_index.php" class="small-box-footer">Selengkapnya <i class="fa fa-arrow-circle-right"></i></a>
                 </div>
             </div>
             <!-- ./col -->
@@ -141,7 +135,7 @@
                     <div class="icon">
                         <i class="ion ion-stats-bars"></i>
                     </div>
-                    <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                    <a href="#" class="small-box-footer">Selengkapnya <i class="fa fa-arrow-circle-right"></i></a>
                 </div>
             </div>
             <!-- ./col -->
@@ -155,7 +149,7 @@
                     <div class="icon">
                         <i class="ion ion-ios-people"></i>
                     </div>
-                    <a href="./financial_owe_index.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                    <a href="./financial_owe_index.php" class="small-box-footer">Selengkapnya <i class="fa fa-arrow-circle-right"></i></a>
                 </div>
             </div>
             <!-- ./col -->
@@ -169,7 +163,7 @@
                     <div class="icon">
                         <i class="ion ion-person"></i>
                     </div>
-                    <a href="./financial_debt_index.php" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                    <a href="./financial_debt_index.php" class="small-box-footer">Selengkapnya <i class="fa fa-arrow-circle-right"></i></a>
                 </div>
             </div>
             <!-- ./col -->
@@ -217,11 +211,11 @@
             <!-- /.col -->
             <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="info-box">
-                    <span class="info-box-icon bg-red"><i class="fa ion-person"></i></span>
+                    <span class="info-box-icon bg-red"><i class="ion ion-android-done-all"></i></span>
 
                     <div class="info-box-content">
-                        <span class="info-box-text">Sisa Hitung</span>
-                        <span class="info-box-number">Rp <?php echo number_format("$total_lunas_berhutang",0,",",".") ?></span>
+                        <span class="info-box-text">Sudah Lunas</span>
+                        <span class="info-box-number">Rp <?php echo number_format("$total_berhutang_sisa",0,",",".") ?></span>
                     </div>
                     <!-- /.info-box-content -->
                 </div>
@@ -233,7 +227,7 @@
                     <span class="info-box-icon bg-aqua"><i class="ion ion-android-cart"></i></span>
 
                     <div class="info-box-content">
-                        <span class="info-box-text">Total Telah Menghabiskan</span>
+                        <span class="info-box-text">Total Habis</span>
                         <span class="info-box-number">Rp <?php echo number_format("$total_habis",0,",",".") ?></span>
                     </div>
                     <!-- /.info-box-content -->
@@ -259,7 +253,7 @@
             <!-- /.col -->
             <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="info-box">
-                    <span class="info-box-icon bg-yellow"><i class="ion ion-ios-people"></i></span>
+                    <span class="info-box-icon bg-yellow"><i class="ion ion-android-done-all"></i></span>
 
                     <div class="info-box-content">
                         <span class="info-box-text">Sudah Lunas</span>
@@ -275,8 +269,8 @@
                     <span class="info-box-icon bg-red"><i class="fa ion-person"></i></span>
 
                     <div class="info-box-content">
-                        <span class="info-box-text">Sudah Lunas</span>
-                        <span class="info-box-number">Rp <?php echo number_format("$total_berhutang_sisa",0,",",".") ?></span>
+                        <span class="info-box-text">Sisa Hutang</span>
+                        <span class="info-box-number">Rp <?php echo number_format("$total_lunas_berhutang",0,",",".") ?></span>
                     </div>
                     <!-- /.info-box-content -->
                 </div>

@@ -26,6 +26,10 @@
     $result_yang_hutang = $mysqli->query($query_yang_hutang);
     $num_results_yang_hutang = $result_yang_hutang->num_rows;
 
+    $query_yang_hutang_lunas = "select * from yang_hutang_lunas ORDER BY id_yang_hutang_lunas ASC ";
+    $result_yang_hutang_lunas = $mysqli->query($query_yang_hutang_lunas);
+    $num_results_yang_hutang_lunas = $result_yang_hutang_lunas->num_rows;
+
     $query_berhutang = "select * from berhutang ORDER BY id_berhutang ASC ";
     $result_berhutang = $mysqli->query($query_berhutang);
     $num_results_berhutang = $result_berhutang->num_rows;

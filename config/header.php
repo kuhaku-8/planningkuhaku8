@@ -47,7 +47,7 @@
                     <ul class="dropdown-menu">
                         <!-- User image -->
                         <li class="user-header">
-                            <img src="../src/profil/<?php echo "$id" ?>.jpg" class="img-circle" alt="User Image">
+                            <img src="../src/profil/<?php echo "$id_pengguna" ?>.jpg" class="img-circle" alt="User Image">
                             <p>
                                 <?php echo "$namalengkap" ?>
                                 <small>Admin</small>

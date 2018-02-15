@@ -119,7 +119,7 @@ include '../config/profil.php';
                                         <th>No</th>
                                         <th>Nama</th>
                                         <th>Status</th>
-                                        <th>Tanggal (M/D/Y)</th>
+                                        <th>Tanggal (Y-M-D)</th>
                                         <th>Jumlah</th>
                                         <th>Belum Lunas</th>
                                         <th>Aksi</th>
@@ -161,8 +161,9 @@ include '../config/profil.php';
                                         <th>No</th>
                                         <th>Nama</th>
                                         <th>Status</th>
-                                        <th>Tanggal (M/D/Y)</th>
+                                        <th>Tanggal (Y-M-D)</th>
                                         <th>Jumlah</th>
+                                        <th>Belum Lunas</th>
                                         <th>Aksi</th>
                                     </tr>
                                     </tfoot>

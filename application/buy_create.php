@@ -31,8 +31,8 @@
     </div>
     <!-- /.box-body -->
     <div class="modal-footer">
-        <input type="reset" class="btn btn-default pull-left" value="Reset">
+        <input type="reset" class="btn btn-outline pull-left" value="Reset">
         <input type='hidden' name='action' value='create'>
-        <input type="submit" class="btn btn-primary" value="Tambah">
+        <input type="submit" class="btn btn-outline" value="Tambah">
     </div>
 </form>
