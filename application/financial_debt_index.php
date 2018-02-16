@@ -140,9 +140,12 @@
                                                 </table>
                                             </td>
                                             <td>
-                                                <a href="./financial_debt_update.php?id=<?php echo "$id_berhutang" ?>" class="btn btn-warning btn-sm"><i class="fa fa-edit"></i> &nbspEdit</a>
-                                                <a href="./financial_debt_delete.php?id=<?php echo "$id_berhutang" ?>" class="btn btn-danger btn-sm" onclick="return confirm('Yakin Ingin Menghapus <?php echo "$nama_berhutang" ?>?')"><i class="fa fa-trash"></i> &nbspDelete</a>
-                                                <a href="./financial_debt_move.php?id=<?php echo "$id_berhutang" ?>" class="btn btn-success btn-sm" onclick="return confirm('Yakin <?php echo "$nama_berhutang" ?> Sudah Lunas?')"><i class="fa fa-share"></i> &nbspMove</a>
+                                                <div class="btn-group">
+                                                    <a href="./financial_debt_update.php?id=<?php echo "$id_berhutang" ?>" class="btn btn-warning btn-sm"><i class="fa fa-edit"></i> &nbspUbah</a>
+                                                    <a href="./financial_debt_delete.php?id=<?php echo "$id_berhutang" ?>" class="btn btn-danger btn-sm" onclick="return confirm('Yakin Ingin Menghapus <?php echo "$nama_berhutang" ?>?')"><i class="fa fa-trash"></i> &nbspHapus</a>
+                                                    <a href="./financial_debt_pay.php?id=<?php echo "$id_berhutang" ?>" class="btn btn-info btn-sm"><i class="fa fa-trash"></i> &nbspCicil</a>
+                                                    <a href="./financial_debt_move.php?id=<?php echo "$id_berhutang" ?>" class="btn btn-success btn-sm" onclick="return confirm('Yakin <?php echo "$nama_berhutang" ?> Sudah Lunas?')"><i class="fa fa-share"></i> &nbspSudah Lunas</a>
+                                                </div>
                                             </td>
                                         </tr>
                                         <?php $no++;} ?>

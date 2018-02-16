@@ -8,4 +8,6 @@
     $namamedium = $row_pengguna['namamedium'];
     $id_pengguna = $row_pengguna['id_pengguna'];
     $saldo_tunai = $row_pengguna['saldo_tunai'];
+    $saldo_paypal = $row_pengguna['saldo_paypal'];
+    $saldo_atm = $row_pengguna['saldo_atm'];
 ?>

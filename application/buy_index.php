@@ -152,7 +152,7 @@
                                             <div class="btn-group">
                                                 <a href="./buy_update.php?id=<?php echo "$id" ?>" class="btn btn-warning btn-sm"><i class="fa fa-edit"></i> &nbspUbah</a>
                                                 <a href="./buy_delete.php?id=<?php echo "$id" ?>" class="btn btn-danger btn-sm" onclick="return confirm('Yakin Ingin Menghapus No. <?php echo "$no" ?>?')"><i class="fa fa-trash"></i> &nbspHapus</a>
-                                                <a href="./buy_move.php?id=<?php echo "$id" ?>" class="btn btn-success btn-sm" onclick="return confirm('Yakin Sudah No. <?php echo "$no" ?> Dibeli?')"><i class="fa fa-share"></i> &nbspSudah Dibeli</a>
+                                                <a href="./buy_move.php?id=<?php echo "$id" ?>" class="btn btn-success btn-sm" onclick="return confirm('Yakin No. <?php echo "$no" ?> Sudah Dibeli?')"><i class="fa fa-share"></i> &nbspSudah Dibeli</a>
                                             </div>
                                         </td>
                                     </tr>

@@ -141,9 +141,11 @@ include '../config/profil.php';
                                                 </table>
                                             </td>
                                             <td>
-                                                <a href="./financial_owe_update.php?id=<?php echo "$id_yang_hutang" ?>" class="btn btn-warning btn-sm"><i class="fa fa-edit"></i> &nbspEdit</a>
-                                                <a href="./financial_owe_delete.php?id=<?php echo "$id_yang_hutang" ?>" class="btn btn-danger btn-sm" onclick="return confirm('Yakin Ingin Menghapus <?php echo "$nama_yang_hutang" ?>?')"><i class="fa fa-trash"></i> &nbspDelete</a>
-                                                <a href="./financial_owe_move.php?id=<?php echo "$id_yang_hutang" ?>" class="btn btn-success btn-sm" onclick="return confirm('Yakin <?php echo "$nama_yang_hutang" ?> Sudah Lunas?')"><i class="fa fa-share"></i> &nbspMove</a>
+                                                <div class="btn-group">
+                                                    <a href="./financial_owe_update.php?id=<?php echo "$id_yang_hutang" ?>" class="btn btn-warning btn-sm"><i class="fa fa-edit"></i> &nbspEdit</a>
+                                                    <a href="./financial_owe_delete.php?id=<?php echo "$id_yang_hutang" ?>" class="btn btn-danger btn-sm" onclick="return confirm('Yakin Ingin Menghapus <?php echo "$nama_yang_hutang" ?>?')"><i class="fa fa-trash"></i> &nbspDelete</a>
+                                                    <a href="./financial_owe_move.php?id=<?php echo "$id_yang_hutang" ?>" class="btn btn-success btn-sm" onclick="return confirm('Yakin <?php echo "$nama_yang_hutang" ?> Sudah Lunas?')"><i class="fa fa-share"></i> &nbspMove</a>
+                                                </div>
                                             </td>
                                         </tr>
                                         <?php $no++;} ?>

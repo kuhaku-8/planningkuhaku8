@@ -107,6 +107,14 @@
                             <!-- /.info-box-content -->
                         </div>
                         <!-- /.info-box -->
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-lg btn-success" data-toggle="modal" data-target="#tambah_tunai">
+                                <i class="fa fa-plus"></i> &nbspTambah
+                            </button>
+                            <button type="button" class="btn btn-lg btn-danger" data-toggle="modal" data-target="#kurangi_tunai">
+                                <i class="fa fa-minus"></i> &nbspKurangi
+                            </button>
+                        </div>
                     </div>
                     <!-- /.col -->
                     <!-- fix for small devices only -->
@@ -114,43 +122,52 @@
 
                     <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="info-box">
-                            <span class="info-box-icon bg-green"><i class="ion ion-ios-cart-outline"></i></span>
+                            <span class="info-box-icon bg-aqua"><i class="fa fa-paypal"></i></span>
 
                             <div class="info-box-content">
-                                <span class="info-box-text">Sales</span>
-                                <span class="info-box-number">760</span>
+                                <span class="info-box-text">Total Uang Paypal</span>
+                                <span class="info-box-number">USD <?php echo "$saldo_paypal" ?></span>
                             </div>
                             <!-- /.info-box-content -->
                         </div>
                         <!-- /.info-box -->
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-lg btn-success" data-toggle="modal" data-target="#tambah_paypal">
+                                <i class="fa fa-plus"></i> &nbspTambah
+                            </button>
+                            <button type="button" class="btn btn-lg btn-danger" data-toggle="modal" data-target="#kurangi_paypal">
+                                <i class="fa fa-minus"></i> &nbspKurangi
+                            </button>
+                        </div>
                     </div>
                     <!-- /.col -->
+                    <!-- fix for small devices only -->
+                    <div class="clearfix visible-sm-block"></div>
+
                     <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="info-box">
-                            <span class="info-box-icon bg-yellow"><i class="ion ion-ios-people"></i></span>
+                            <span class="info-box-icon bg-aqua"><i class="ion ion-card"></i></span>
 
                             <div class="info-box-content">
-                                <span class="info-box-text">Sisa Hutang</span>
-                                <span class="info-box-number">Rp <?php echo number_format("$total_yang_hutang_sisa",0,",",".") ?></span>
+                                <span class="info-box-text">Total Uang ATM</span>
+                                <span class="info-box-number">Rp <?php echo number_format("$saldo_atm",0,",",".") ?></span>
                             </div>
                             <!-- /.info-box-content -->
                         </div>
                         <!-- /.info-box -->
-                    </div>
-                    <!-- /.col -->
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="info-box">
-                            <span class="info-box-icon bg-red"><i class="ion ion-android-done-all"></i></span>
-
-                            <div class="info-box-content">
-                                <span class="info-box-text">Sudah Lunas</span>
-                                <span class="info-box-number">Rp <?php echo number_format("$total_berhutang_sisa",0,",",".") ?></span>
-                            </div>
-                            <!-- /.info-box-content -->
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-lg btn-success" data-toggle="modal" data-target="#tambah_atm">
+                                <i class="fa fa-plus"></i> &nbspTambah
+                            </button>
+                            <button type="button" class="btn btn-lg btn-danger" data-toggle="modal" data-target="#kurangi_atm">
+                                <i class="fa fa-minus"></i> &nbspKurangi
+                            </button>
                         </div>
-                        <!-- /.info-box -->
                     </div>
                     <!-- /.col -->
+                    <!-- fix for small devices only -->
+                    <div class="clearfix visible-sm-block"></div>
+
                     <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="info-box">
                             <span class="info-box-icon bg-aqua"><i class="ion ion-android-cart"></i></span>
@@ -166,46 +183,6 @@
                     <!-- /.col -->
                     <!-- fix for small devices only -->
                     <div class="clearfix visible-sm-block"></div>
-
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="info-box">
-                            <span class="info-box-icon bg-green"><i class="ion ion-ios-cart-outline"></i></span>
-
-                            <div class="info-box-content">
-                                <span class="info-box-text">Sales</span>
-                                <span class="info-box-number">760</span>
-                            </div>
-                            <!-- /.info-box-content -->
-                        </div>
-                        <!-- /.info-box -->
-                    </div>
-                    <!-- /.col -->
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="info-box">
-                            <span class="info-box-icon bg-yellow"><i class="ion ion-android-done-all"></i></span>
-
-                            <div class="info-box-content">
-                                <span class="info-box-text">Sudah Lunas</span>
-                                <span class="info-box-number">Rp <?php echo number_format("$total_lunas_yang_hutang",0,",",".") ?></span>
-                            </div>
-                            <!-- /.info-box-content -->
-                        </div>
-                        <!-- /.info-box -->
-                    </div>
-                    <!-- /.col -->
-                    <div class="col-md-3 col-sm-6 col-xs-12">
-                        <div class="info-box">
-                            <span class="info-box-icon bg-red"><i class="fa ion-person"></i></span>
-
-                            <div class="info-box-content">
-                                <span class="info-box-text">Sisa Hutang</span>
-                                <span class="info-box-number">Rp <?php echo number_format("$total_lunas_berhutang",0,",",".") ?></span>
-                            </div>
-                            <!-- /.info-box-content -->
-                        </div>
-                        <!-- /.info-box -->
-                    </div>
-                    <!-- /.col -->
                 </div>
                 <!-- /.box-body -->
                 <div class="box-footer">
@@ -221,7 +198,7 @@
     <?php include '../config/footer.php'; ?>
     <?php include '../config/bottom.php'; ?>
 </div>
-<div class="modal modal-info fade" id="tambah_tunai">
+<div class="modal modal-success fade" id="tambah_tunai">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -235,7 +212,7 @@
     </div>
     <!-- /.modal-dialog -->
 </div>
-<div class="modal modal-info fade" id="kurangi_tunai">
+<div class="modal modal-danger fade" id="kurangi_tunai">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -244,6 +221,62 @@
                 <h4 class="modal-title">Kurangi Jumlah Uang Tunai</h4>
             </div>
             <?php include './financial_cash_minus.php'; ?>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<div class="modal modal-success fade" id="tambah_paypal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Tambahan Jumlah Uang Paypal</h4>
+            </div>
+            <?php include './financial_paypal_add.php'; ?>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<div class="modal modal-danger fade" id="kurangi_paypal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Kurangi Jumlah Uang Paypal</h4>
+            </div>
+            <?php include './financial_paypal_minus.php'; ?>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<div class="modal modal-success fade" id="tambah_atm">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Tambahan Jumlah Uang ATM</h4>
+            </div>
+            <?php include './financial_atm_add.php'; ?>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<div class="modal modal-danger fade" id="kurangi_atm">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Kurangi Jumlah Uang ATM</h4>
+            </div>
+            <?php include './financial_atm_minus.php'; ?>
         </div>
         <!-- /.modal-content -->
     </div>

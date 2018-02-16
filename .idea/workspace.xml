@@ -5,19 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="69c1681c-d37b-4563-b2d0-860ff60983d2" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/application/financial_debt_history.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/application/financial_atm_add.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/application/financial_atm_minus.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/application/financial_paypal_add.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/application/financial_paypal_minus.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/application/buy_index.php" afterPath="$PROJECT_DIR$/application/buy_index.php" />
-      <change beforePath="$PROJECT_DIR$/application/buy_update.php" afterPath="$PROJECT_DIR$/application/buy_update.php" />
+      <change beforePath="$PROJECT_DIR$/application/financial_cash_add.php" afterPath="$PROJECT_DIR$/application/financial_cash_add.php" />
+      <change beforePath="$PROJECT_DIR$/application/financial_cash_minus.php" afterPath="$PROJECT_DIR$/application/financial_cash_minus.php" />
+      <change beforePath="$PROJECT_DIR$/application/financial_debt_history.php" afterPath="$PROJECT_DIR$/application/financial_debt_history.php" />
       <change beforePath="$PROJECT_DIR$/application/financial_debt_index.php" afterPath="$PROJECT_DIR$/application/financial_debt_index.php" />
       <change beforePath="$PROJECT_DIR$/application/financial_index.php" afterPath="$PROJECT_DIR$/application/financial_index.php" />
       <change beforePath="$PROJECT_DIR$/application/financial_owe_history.php" afterPath="$PROJECT_DIR$/application/financial_owe_history.php" />
       <change beforePath="$PROJECT_DIR$/application/financial_owe_index.php" afterPath="$PROJECT_DIR$/application/financial_owe_index.php" />
-      <change beforePath="$PROJECT_DIR$/application/history_index.php" afterPath="$PROJECT_DIR$/application/history_index.php" />
-      <change beforePath="$PROJECT_DIR$/application/history_more.php" afterPath="$PROJECT_DIR$/application/history_more.php" />
-      <change beforePath="$PROJECT_DIR$/application/home.php" afterPath="$PROJECT_DIR$/application/home.php" />
-      <change beforePath="$PROJECT_DIR$/config/count.php" afterPath="$PROJECT_DIR$/config/count.php" />
-      <change beforePath="$PROJECT_DIR$/config/preference.php" afterPath="$PROJECT_DIR$/config/preference.php" />
+      <change beforePath="$PROJECT_DIR$/config/profil.php" afterPath="$PROJECT_DIR$/config/profil.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,71 +28,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="buy_update.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/application/buy_update.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="73" column="48" lean-forward="false" selection-start-line="73" selection-start-column="48" selection-end-line="73" selection-end-column="48" />
-              <folding>
-                <marker date="1518769203179" expanded="true" signature="186:287" ph="select * fro... barang_akan_dibeli" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="preference.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/preference.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-448">
-              <caret line="37" column="69" lean-forward="false" selection-start-line="37" selection-start-column="69" selection-end-line="37" selection-end-column="69" />
-              <folding>
-                <marker date="1518706436769" expanded="true" signature="283:334" ph="select * fro... barang_akan_dibeli" />
-                <marker date="1518706436769" expanded="true" signature="476:519" ph="select * fro... barang_punya" />
-                <marker date="1518706436769" expanded="true" signature="643:696" ph="select * fro... yang_hutang" />
-                <marker date="1518706436769" expanded="true" signature="856:887" ph="select * fro... yang_hutang_lunas" />
-                <marker date="1518706436769" expanded="true" signature="1063:1112" ph="select * fro... berhutang" />
-                <marker date="1518706436769" expanded="true" signature="1262:1291" ph="select * fro... berhutang" />
-                <marker date="1518706436769" expanded="true" signature="1545:1772" ph="insert into barang_akan_dibeli... " />
-                <marker date="1518706436769" expanded="true" signature="2139:2567" ph="insert into yang_hutang... " />
-                <marker date="1518706436769" expanded="true" signature="3034:3464" ph="insert into berhutang... " />
-                <marker date="1518706436769" expanded="true" signature="3886:4173" ph="update barang_akan_dibeli... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="advanced.html" pinned="false" current-in-tab="false">
-        <entry file="file://D:/Downloads/Programs/AdminLTE-2.4.3/pages/forms/advanced.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="16">
-              <caret line="529" column="0" lean-forward="true" selection-start-line="529" selection-start-column="0" selection-end-line="529" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="general.html" pinned="false" current-in-tab="false">
-        <entry file="file://D:/Downloads/Programs/AdminLTE-2.4.3/pages/forms/general.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="748" column="20" lean-forward="true" selection-start-line="745" selection-start-column="14" selection-end-line="748" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="buy_index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/buy_index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="143" column="52" lean-forward="true" selection-start-line="143" selection-start-column="52" selection-end-line="143" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -167,9 +104,7 @@
         <option value="$PROJECT_DIR$/application/financial_debt_create.php" />
         <option value="$PROJECT_DIR$/config/preference.php" />
         <option value="$PROJECT_DIR$/application/history_index.php" />
-        <option value="$PROJECT_DIR$/application/financial_owe_index.php" />
         <option value="$PROJECT_DIR$/application/financial_owe_history.php" />
-        <option value="$PROJECT_DIR$/application/financial_debt_index.php" />
         <option value="$PROJECT_DIR$/application/financial_debt_history.php" />
         <option value="$PROJECT_DIR$/application/buy_index.php" />
         <option value="$PROJECT_DIR$/application/history_more.php" />
@@ -179,6 +114,14 @@
         <option value="$PROJECT_DIR$/config/header.php" />
         <option value="$PROJECT_DIR$/application/financial_index.php" />
         <option value="$PROJECT_DIR$/application/buy_update.php" />
+        <option value="$PROJECT_DIR$/application/financial_paypal_add.php" />
+        <option value="$PROJECT_DIR$/application/financial_atm_add.php" />
+        <option value="$PROJECT_DIR$/application/financial_cash_add.php" />
+        <option value="$PROJECT_DIR$/application/financial_owe_index.php" />
+        <option value="$PROJECT_DIR$/application/financial_debt_index.php" />
+        <option value="$PROJECT_DIR$/application/financial_paypal_minus.php" />
+        <option value="$PROJECT_DIR$/application/financial_cash_minus.php" />
+        <option value="$PROJECT_DIR$/application/financial_atm_minus.php" />
       </list>
     </option>
   </component>
@@ -189,7 +132,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1340" />
@@ -238,7 +181,7 @@
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../upload" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -291,13 +234,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106529000" />
+    <option name="totallyTimeSpent" value="111125000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17083333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17083333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -309,13 +251,24 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17083333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -349,10 +302,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/Downloads/Programs/AdminLTE-2.4.3/pages/UI/buttons.html" />
-    <entry file="file://D:/Downloads/Programs/AdminLTE-2.4.3/pages/UI/modals.html" />
-    <entry file="file://$PROJECT_DIR$/application/delete.php" />
-    <entry file="file://$PROJECT_DIR$/application/create.php" />
     <entry file="file://$PROJECT_DIR$/application/update.php" />
     <entry file="file://$PROJECT_DIR$/application/history.php" />
     <entry file="file://$PROJECT_DIR$/application/buy.php" />
@@ -382,13 +331,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../../AdminLTE-2.4.3/pages/forms/advanced.html" />
-    <entry file="file://$PROJECT_DIR$/application/financial_cash_add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../../AdminLTE-2.4.3/pages/forms/general.html" />
     <entry file="file://$PROJECT_DIR$/../../../../AdminLTE-2.4.3/pages/UI/general.html" />
     <entry file="file://$PROJECT_DIR$/config/logincheck.php">
@@ -410,20 +352,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
           <caret line="36" column="90" lean-forward="false" selection-start-line="36" selection-start-column="90" selection-end-line="36" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/financial_cash_minus.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="129" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="129" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/bottom.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="84" column="28" lean-forward="false" selection-start-line="84" selection-start-column="28" selection-end-line="84" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -457,13 +385,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/financial_owe_index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="86" column="48" lean-forward="false" selection-start-line="86" selection-start-column="48" selection-end-line="86" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/financial_owe_history.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
@@ -489,7 +410,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="759">
           <caret line="48" column="51" lean-forward="false" selection-start-line="48" selection-start-column="51" selection-end-line="48" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -497,7 +417,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
           <caret line="35" column="51" lean-forward="false" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -515,15 +434,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="33" column="12" lean-forward="true" selection-start-line="33" selection-start-column="12" selection-end-line="69" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/financial_debt_index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="87" column="40" lean-forward="false" selection-start-line="87" selection-start-column="40" selection-end-line="87" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -543,7 +453,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="419">
           <caret line="93" column="51" lean-forward="false" selection-start-line="93" selection-start-column="51" selection-end-line="93" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -551,9 +460,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-          <folding>
-            <marker date="1518604046025" expanded="true" signature="63:112" ph="select * fro... pengguna" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -561,7 +468,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="133" column="10" lean-forward="true" selection-start-line="133" selection-start-column="10" selection-end-line="133" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -569,7 +475,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -577,14 +482,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="20" lean-forward="false" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/financial_index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1014">
-          <caret line="68" column="21" lean-forward="true" selection-start-line="68" selection-start-column="21" selection-end-line="68" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -599,19 +496,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/buy_index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="143" column="52" lean-forward="true" selection-start-line="143" selection-start-column="52" selection-end-line="143" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Downloads/Programs/AdminLTE-2.4.3/pages/forms/advanced.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16">
           <caret line="529" column="0" lean-forward="true" selection-start-line="529" selection-start-column="0" selection-end-line="529" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -619,14 +507,67 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="748" column="20" lean-forward="true" selection-start-line="745" selection-start-column="14" selection-end-line="748" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/buy_index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-122">
+          <caret line="154" column="188" lean-forward="false" selection-start-line="154" selection-start-column="188" selection-end-line="154" selection-end-column="188" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/financial_index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-669">
+          <caret line="191" column="18" lean-forward="true" selection-start-line="191" selection-start-column="18" selection-end-line="191" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/financial_paypal_add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="116" lean-forward="false" selection-start-line="9" selection-start-column="98" selection-end-line="9" selection-end-column="116" />
+          <folding>
+            <marker date="1518788385351" expanded="true" signature="934:1043" ph="update pengguna... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/financial_atm_add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="95" lean-forward="false" selection-start-line="9" selection-start-column="95" selection-end-line="9" selection-end-column="95" />
+          <folding>
+            <marker date="1518788403626" expanded="true" signature="913:1016" ph="update pengguna... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/financial_cash_add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="96" lean-forward="false" selection-start-line="9" selection-start-column="96" selection-end-line="9" selection-end-column="96" />
+          <folding>
+            <marker date="1518788403498" expanded="true" signature="910:1016" ph="update pengguna... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/bottom.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1099">
+          <caret line="110" column="28" lean-forward="false" selection-start-line="110" selection-start-column="28" selection-end-line="110" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/preference.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-448">
-          <caret line="37" column="69" lean-forward="false" selection-start-line="37" selection-start-column="69" selection-end-line="37" selection-end-column="69" />
+        <state relative-caret-position="34">
+          <caret line="8" column="53" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="53" />
           <folding>
             <marker date="1518706436769" expanded="true" signature="283:334" ph="select * fro... barang_akan_dibeli" />
             <marker date="1518706436769" expanded="true" signature="476:519" ph="select * fro... barang_punya" />
@@ -642,12 +583,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/financial_debt_index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="145" column="169" lean-forward="false" selection-start-line="145" selection-start-column="164" selection-end-line="145" selection-end-column="169" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/financial_owe_index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="147" column="54" lean-forward="false" selection-start-line="147" selection-start-column="54" selection-end-line="147" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/buy_update.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
+        <state relative-caret-position="1241">
           <caret line="73" column="48" lean-forward="false" selection-start-line="73" selection-start-column="48" selection-end-line="73" selection-end-column="48" />
           <folding>
             <marker date="1518769203179" expanded="true" signature="186:287" ph="select * fro... barang_akan_dibeli" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/financial_atm_minus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="84" lean-forward="false" selection-start-line="24" selection-start-column="84" selection-end-line="24" selection-end-column="84" />
+          <folding>
+            <marker date="1518793433570" expanded="true" signature="1118:1221" ph="update pengguna... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/financial_paypal_minus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="87" lean-forward="false" selection-start-line="24" selection-start-column="87" selection-end-line="24" selection-end-column="87" />
+          <folding>
+            <marker date="1518793355509" expanded="true" signature="1166:1275" ph="update pengguna... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/financial_cash_minus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="126" lean-forward="false" selection-start-line="24" selection-start-column="75" selection-end-line="24" selection-end-column="126" />
+          <folding>
+            <marker date="1518793433586" expanded="true" signature="1127:1233" ph="update pengguna... " />
           </folding>
         </state>
       </provider>

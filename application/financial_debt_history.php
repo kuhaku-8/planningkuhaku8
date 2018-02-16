@@ -109,7 +109,6 @@ include '../config/profil.php';
                                         <th>Tanggal Hutang (Y-M-D)</th>
                                         <th>Tanggal Lunas (Y-M-D)</th>
                                         <th>Jumlah</th>
-                                        <th>Aksi</th>
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -128,9 +127,6 @@ include '../config/profil.php';
                                                     </tr>
                                                 </table>
                                             </td>
-                                            <td>
-
-                                            </td>
                                         </tr>
                                         <?php $no++;} ?>
                                     </tbody>
@@ -142,7 +138,6 @@ include '../config/profil.php';
                                         <th>Tanggal Hutang (Y-M-D)</th>
                                         <th>Tanggal Lunas (Y-M-D)</th>
                                         <th>Jumlah</th>
-                                        <th>Aksi</th>
                                     </tr>
                                     </tfoot>
                                 </table>
