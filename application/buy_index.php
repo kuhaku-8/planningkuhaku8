@@ -32,39 +32,31 @@
             <?php include '../config/sidebar_user.php'; ?>
             <!-- sidebar menu: : style can be found in sidebar.less -->
             <ul class="sidebar-menu" data-widget="tree">
+                <li class="header">KEUANGAN</li>
+                <li><a href="./financial_index.php"><i class="fa fa-balance-scale"></i> Dimiliki</a></li>
                 <li class="treeview">
-                    <a href="#">
-                        <i class="fa fa-money"></i> <span>Keuangan</span>
+                    <a href="#"><i class="fa fa-users"></i> Daftar Yang Berhutang
                         <span class="pull-right-container">
-                        <i class="fa fa-angle-left pull-right"></i>
-                    </span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="./financial_index.php"><i class="fa fa-balance-scale"></i> Lihat</a></li>
-                        <li class="treeview">
-                            <a href="#"><i class="fa fa-users"></i> Daftar Yang Berhutang
-                                <span class="pull-right-container">
-                                    <i class="fa fa-angle-left pull-right"></i>
-                                </span>
-                            </a>
-                            <ul class="treeview-menu">
-                                <li><a href="./financial_owe_index.php"><i class="fa fa-th-list"></i> Lihat</a></li>
-                                <li><a href="./financial_owe_history.php"><i class="fa fa-check"></i> Sudah Lunas</a></li>
-                            </ul>
-                        </li>
-                        <li class="treeview">
-                            <a href="#"><i class="fa fa-users"></i> Daftar Hutang
-                                <span class="pull-right-container">
-                                    <i class="fa fa-angle-left pull-right"></i>
-                                </span>
-                            </a>
-                            <ul class="treeview-menu">
-                                <li><a href="./financial_debt_index.php"><i class="fa fa-th-list"></i> Lihat</a></li>
-                                <li><a href="./financial_debt_history.php"><i class="fa fa-check"></i> Sudah Lunas</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="./financial_owe_index.php"><i class="fa fa-th-list"></i> Lihat</a></li>
+                        <li><a href="./financial_owe_history.php"><i class="fa fa-check"></i> Sudah Lunas</a></li>
                     </ul>
                 </li>
+                <li class="treeview">
+                    <a href="#"><i class="fa fa-users"></i> Daftar Hutang
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="./financial_debt_index.php"><i class="fa fa-th-list"></i> Lihat</a></li>
+                        <li><a href="./financial_debt_history.php"><i class="fa fa-check"></i> Sudah Lunas</a></li>
+                    </ul>
+                </li>
+                <li class="header">BARANG</li>
                 <li class="active">
                     <a href="#">
                         <i class="fa fa-tasks"></i> <span>Barang Akan Dibeli</span>
@@ -110,8 +102,8 @@
                             </button>
                         </div>
                         <!-- /.box-header -->
-                        <?php if($num_results_dibeli>0){ ?>
                         <div class="box-body">
+                            <?php if($num_results_dibeli>0){ ?>
                             <table id="example1" class="table table-bordered table-striped">
                                 <thead>
                                 <tr>
@@ -120,6 +112,7 @@
                                     <th>Qty</th>
                                     <th>Harga</th>
                                     <th>Jumlah</th>
+                                    <th>Status</th>
                                     <th>Aksi</th>
                                 </tr>
                                 </thead>
@@ -137,7 +130,15 @@
                                                 </tr>
                                             </table>
                                         </td>
-                                        <?php $jumlah=$harga*$qty; ?>
+                                        <?php
+                                            $jumlah=$harga*$qty;
+                                            if($saldo_tunai>=$jumlah){$status="Dapat Dibeli";}
+                                            else{
+                                                $kurang=$jumlah-$saldo_tunai;
+                                                $kurangnya = number_format("$kurang",0,",",".");
+                                                $status="Uang Kurang Rp $kurangnya";
+                                            }
+                                        ?>
                                         <td>
                                             <table width="90">
                                                 <tr>
@@ -146,11 +147,12 @@
                                                 </tr>
                                             </table>
                                         </td>
+                                        <td><?php echo "$status" ?></td>
                                         <td>
                                             <div class="btn-group">
                                                 <a href="./buy_update.php?id=<?php echo "$id" ?>" class="btn btn-warning btn-sm"><i class="fa fa-edit"></i> &nbspUbah</a>
-                                                <a href="./buy_delete.php?id=<?php echo "$id" ?>" class="btn btn-danger btn-sm" onclick="return confirm('Yakin Ingin Menghapus <?php echo "$nama" ?>?')"><i class="fa fa-trash"></i> &nbspHapus</a>
-                                                <a href="./buy_move.php?id=<?php echo "$id" ?>" class="btn btn-success btn-sm" onclick="return confirm('Yakin <?php echo "$nama" ?> Sudah Dibeli?')"><i class="fa fa-share"></i> &nbspSudah Dibeli</a>
+                                                <a href="./buy_delete.php?id=<?php echo "$id" ?>" class="btn btn-danger btn-sm" onclick="return confirm('Yakin Ingin Menghapus No. <?php echo "$no" ?>?')"><i class="fa fa-trash"></i> &nbspHapus</a>
+                                                <a href="./buy_move.php?id=<?php echo "$id" ?>" class="btn btn-success btn-sm" onclick="return confirm('Yakin Sudah No. <?php echo "$no" ?> Dibeli?')"><i class="fa fa-share"></i> &nbspSudah Dibeli</a>
                                             </div>
                                         </td>
                                     </tr>
@@ -163,19 +165,19 @@
                                     <th>Qty</th>
                                     <th>Harga</th>
                                     <th>Jumlah</th>
+                                    <th>Status</th>
                                     <th>Aksi</th>
                                 </tr>
                                 </tfoot>
                             </table>
+                            <?php }else{ ?>
+                                Tidak Ada Data!
+                            <?php }
+                                $result_dibeli->free();
+                                $mysqli->close();
+                            ?>
                         </div>
                         <!-- /.box-body -->
-                        <?php }else{ ?>
-                            No records found.
-                            <?php
-                        }
-                        $result_dibeli->free();
-                        $mysqli->close();
-                        ?>
                     </div>
                     <!-- /.box -->
                 </div>

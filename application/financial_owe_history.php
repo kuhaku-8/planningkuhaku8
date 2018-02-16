@@ -32,39 +32,31 @@ include '../config/profil.php';
             <?php include '../config/sidebar_user.php'; ?>
             <!-- sidebar menu: : style can be found in sidebar.less -->
             <ul class="sidebar-menu" data-widget="tree">
+                <li class="header">KEUANGAN</li>
+                <li><a href="./financial_index.php"><i class="fa fa-balance-scale"></i> Dimiliki</a></li>
                 <li class="treeview active">
-                    <a href="#">
-                        <i class="fa fa-money"></i> <span>Keuangan</span>
+                    <a href="#"><i class="fa fa-users"></i> Daftar Yang Berhutang
                         <span class="pull-right-container">
-                        <i class="fa fa-angle-left pull-right"></i>
-                    </span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="./financial_index.php"><i class="fa fa-balance-scale"></i> Lihat</a></li>
-                        <li class="treeview active">
-                            <a href="#"><i class="fa fa-users"></i> Daftar Yang Berhutang
-                                <span class="pull-right-container">
-                                    <i class="fa fa-angle-left pull-right"></i>
-                                </span>
-                            </a>
-                            <ul class="treeview-menu">
-                                <li><a href="./financial_owe_index.php"><i class="fa fa-th-list"></i> Lihat</a></li>
-                                <li class="active"><a href="#"><i class="fa fa-check"></i> Sudah Lunas</a></li>
-                            </ul>
-                        </li>
-                        <li class="treeview">
-                            <a href="#"><i class="fa fa-users"></i> Daftar Hutang
-                                <span class="pull-right-container">
-                                    <i class="fa fa-angle-left pull-right"></i>
-                                </span>
-                            </a>
-                            <ul class="treeview-menu">
-                                <li><a href="./financial_debt_index.php"><i class="fa fa-th-list"></i> Lihat</a></li>
-                                <li><a href="./financial_debt_history.php"><i class="fa fa-check"></i> Sudah Lunas</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="./financial_owe_index.php"><i class="fa fa-th-list"></i> Lihat</a></li>
+                        <li class="active"><a href="#"><i class="fa fa-check"></i> Sudah Lunas</a></li>
                     </ul>
                 </li>
+                <li class="treeview">
+                    <a href="#"><i class="fa fa-users"></i> Daftar Hutang
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="./financial_debt_index.php"><i class="fa fa-th-list"></i> Lihat</a></li>
+                        <li><a href="./financial_debt_history.php"><i class="fa fa-check"></i> Sudah Lunas</a></li>
+                    </ul>
+                </li>
+                <li class="header">BARANG</li>
                 <li>
                     <a href="./buy_index.php">
                         <i class="fa fa-tasks"></i> <span>Barang Akan Dibeli</span>
@@ -92,8 +84,8 @@ include '../config/profil.php';
             </h1>
             <ol class="breadcrumb">
                 <li><a href="./home.php"><i class="fa fa-home"></i>Home</a></li>
-                <li><a href="#">Keuangan</a></li>
-                <li class="active">Daftar Yang Lunas Berutang</li>
+                <li><a href="#">Daftar Yang Berhutang</a></li>
+                <li class="active">Sudah Lunas</li>
             </ol>
         </section>
 
@@ -106,15 +98,16 @@ include '../config/profil.php';
                             <h3 class="box-title">List Yang Lunas Berhutang</h3>
                         </div>
                         <!-- /.box-header -->
-                        <?php if($num_results_yang_hutang_lunas>0){ ?>
                             <div class="box-body">
+                                <?php if($num_results_yang_hutang_lunas>0){ ?>
                                 <table id="example1" class="table table-bordered table-striped">
                                     <thead>
                                     <tr>
                                         <th>No</th>
                                         <th>Nama</th>
                                         <th>Status</th>
-                                        <th>Tanggal (Y-M-D)</th>
+                                        <th>Tanggal Hutang (Y-M-D)</th>
+                                        <th>Tanggal Lunas (Y-M-D)</th>
                                         <th>Jumlah</th>
                                         <th>Aksi</th>
                                     </tr>
@@ -126,6 +119,7 @@ include '../config/profil.php';
                                             <td><?php echo "$nama_yang_hutang_lunas" ?></td>
                                             <td><?php echo "$status_yang_hutang_lunas" ?></td>
                                             <td><?php echo "$tanggal_yang_hutang_lunas" ?></td>
+                                            <td><?php echo "$tanggal_lunas_yang_hutang_lunas" ?></td>
                                             <td>
                                                 <table width="90">
                                                     <tr>
@@ -135,9 +129,7 @@ include '../config/profil.php';
                                                 </table>
                                             </td>
                                             <td>
-                                                <a href="./financial_owe_update.php?id=<?php echo "$id_yang_hutang" ?>" class="btn btn-warning btn-sm"><i class="fa fa-edit"></i> &nbspEdit</a>
-                                                <a href="./financial_owe_delete.php?id=<?php echo "$id_yang_hutang" ?>" class="btn btn-danger btn-sm" onclick="return confirm('Yakin Ingin Menghapus <?php echo "$nama_yang_hutang" ?>?')"><i class="fa fa-trash"></i> &nbspDelete</a>
-                                                <a href="./financial_owe_move.php?id=<?php echo "$id_yang_hutang" ?>" class="btn btn-success btn-sm" onclick="return confirm('Yakin <?php echo "$nama_yang_hutang" ?> Sudah Lunas?')"><i class="fa fa-share"></i> &nbspMove</a>
+
                                             </td>
                                         </tr>
                                         <?php $no++;} ?>
@@ -147,21 +139,21 @@ include '../config/profil.php';
                                         <th>No</th>
                                         <th>Nama</th>
                                         <th>Status</th>
-                                        <th>Tanggal (Y-M-D)</th>
+                                        <th>Tanggal Hutang (Y-M-D)</th>
+                                        <th>Tanggal Lunas (Y-M-D)</th>
                                         <th>Jumlah</th>
                                         <th>Aksi</th>
                                     </tr>
                                     </tfoot>
                                 </table>
+                                <?php }else{ ?>
+                                    Tidak Ada Data!
+                                <?php }
+                                    $result_yang_hutang_lunas->free();
+                                    $mysqli->close();
+                                ?>
                             </div>
-                            <!-- /.box-body -->
-                        <?php }else{ ?>
-                            No records found.
-                            <?php
-                        }
-                        $result_yang_hutang_lunas->free();
-                        $mysqli->close();
-                        ?>
+                        <!-- /.box-body -->
                     </div>
                     <!-- /.box -->
                 </div>

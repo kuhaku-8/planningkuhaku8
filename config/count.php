@@ -27,11 +27,11 @@
         $total_lunas_berhutang=$total_berhutang_hitung-$total_berhutang_sisa;
     }
 
-    $query_sudah = "select * from barang_punya ORDER BY id DESC";
-    $result_sudah = $mysqli->query($query_sudah);
+    $query_sudah_hitung = "select * from barang_punya ORDER BY id DESC";
+    $result_sudah_hitung = $mysqli->query($query_sudah_hitung);
 
     $total_habis=0;
-    while($row = $result_sudah->fetch_assoc()){
+    while($row = $result_sudah_hitung->fetch_assoc()){
         extract($row);
         $jumlah=$harga*$qty;
         $total_habis+=$jumlah;

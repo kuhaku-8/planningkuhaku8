@@ -32,39 +32,31 @@ include '../config/profil.php';
             <?php include '../config/sidebar_user.php'; ?>
             <!-- sidebar menu: : style can be found in sidebar.less -->
             <ul class="sidebar-menu" data-widget="tree">
+                <li class="header">KEUANGAN</li>
+                <li><a href="./financial_index.php"><i class="fa fa-balance-scale"></i> Dimiliki</a></li>
                 <li class="treeview active">
-                    <a href="#">
-                        <i class="fa fa-money"></i> <span>Keuangan</span>
+                    <a href="#"><i class="fa fa-users"></i> Daftar Yang Berhutang
                         <span class="pull-right-container">
-                        <i class="fa fa-angle-left pull-right"></i>
-                    </span>
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li><a href="./financial_index.php"><i class="fa fa-balance-scale"></i> Lihat</a></li>
-                        <li class="treeview active">
-                            <a href="#"><i class="fa fa-users"></i> Daftar Yang Berhutang
-                                <span class="pull-right-container">
-                                    <i class="fa fa-angle-left pull-right"></i>
-                                </span>
-                            </a>
-                            <ul class="treeview-menu">
-                                <li class="active"><a href="#"><i class="fa fa-th-list"></i> Lihat</a></li>
-                                <li><a href="./financial_owe_history.php"><i class="fa fa-check"></i> Sudah Lunas</a></li>
-                            </ul>
-                        </li>
-                        <li class="treeview">
-                            <a href="#"><i class="fa fa-users"></i> Daftar Hutang
-                                <span class="pull-right-container">
-                                    <i class="fa fa-angle-left pull-right"></i>
-                                </span>
-                            </a>
-                            <ul class="treeview-menu">
-                                <li><a href="./financial_debt_index.php"><i class="fa fa-th-list"></i> Lihat</a></li>
-                                <li><a href="./financial_debt_history.php"><i class="fa fa-check"></i> Sudah Lunas</a></li>
-                            </ul>
-                        </li>
+                        <li class="active"><a href="#"><i class="fa fa-th-list"></i> Lihat</a></li>
+                        <li><a href="./financial_owe_history.php"><i class="fa fa-check"></i> Sudah Lunas</a></li>
                     </ul>
                 </li>
+                <li class="treeview">
+                    <a href="#"><i class="fa fa-users"></i> Daftar Hutang
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="./financial_debt_index.php"><i class="fa fa-th-list"></i> Lihat</a></li>
+                        <li><a href="./financial_debt_history.php"><i class="fa fa-check"></i> Sudah Lunas</a></li>
+                    </ul>
+                </li>
+                <li class="header">BARANG</li>
                 <li>
                     <a href="./buy_index.php">
                         <i class="fa fa-tasks"></i> <span>Barang Akan Dibeli</span>
@@ -92,8 +84,8 @@ include '../config/profil.php';
             </h1>
             <ol class="breadcrumb">
                 <li><a href="./home.php"><i class="fa fa-home"></i>Home</a></li>
-                <li><a href="#">Keuangan</a></li>
-                <li class="active">Daftar Yang Berutang</li>
+                <li><a href="#">Daftar Yang Berhutang</a></li>
+                <li class="active">Lihat</li>
             </ol>
         </section>
 
@@ -111,8 +103,8 @@ include '../config/profil.php';
                             </button>
                         </div>
                         <!-- /.box-header -->
-                        <?php if($num_results_yang_hutang>0){ ?>
                             <div class="box-body">
+                                <?php if($num_results_yang_hutang>0){ ?>
                                 <table id="example1" class="table table-bordered table-striped">
                                     <thead>
                                     <tr>
@@ -168,15 +160,14 @@ include '../config/profil.php';
                                     </tr>
                                     </tfoot>
                                 </table>
+                                <?php }else{ ?>
+                                    Tidak Ada Data!
+                                <?php }
+                                    $result_yang_hutang->free();
+                                    $mysqli->close();
+                                ?>
                             </div>
                             <!-- /.box-body -->
-                        <?php }else{ ?>
-                            No records found.
-                            <?php
-                        }
-                        $result_yang_hutang->free();
-                        $mysqli->close();
-                        ?>
                     </div>
                     <!-- /.box -->
                 </div>

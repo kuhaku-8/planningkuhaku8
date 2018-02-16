@@ -22,17 +22,21 @@
 	$result_sudah = $mysqli->query($query_sudah);
 	$num_results_sudah = $result_sudah->num_rows;
 
-    $query_yang_hutang = "select * from yang_hutang ORDER BY id_yang_hutang ASC ";
+    $query_yang_hutang = "select * from yang_hutang ORDER BY id_yang_hutang ASC";
     $result_yang_hutang = $mysqli->query($query_yang_hutang);
     $num_results_yang_hutang = $result_yang_hutang->num_rows;
 
-    $query_yang_hutang_lunas = "select * from yang_hutang_lunas ORDER BY id_yang_hutang_lunas ASC ";
+    $query_yang_hutang_lunas = "select * from yang_hutang_lunas";
     $result_yang_hutang_lunas = $mysqli->query($query_yang_hutang_lunas);
     $num_results_yang_hutang_lunas = $result_yang_hutang_lunas->num_rows;
 
-    $query_berhutang = "select * from berhutang ORDER BY id_berhutang ASC ";
+    $query_berhutang = "select * from berhutang ORDER BY id_berhutang ASC";
     $result_berhutang = $mysqli->query($query_berhutang);
     $num_results_berhutang = $result_berhutang->num_rows;
+
+    $query_berhutang_lunas = "select * from berhutang_lunas";
+    $result_berhutang_lunas = $mysqli->query($query_berhutang_lunas);
+    $num_results_berhutang_lunas = $result_berhutang_lunas->num_rows;
 
 	$action = isset($_POST['action']) ? $_POST['action'] : "";
 
