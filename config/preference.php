@@ -57,7 +57,7 @@
 	}
 
 	//tambah_yang_hutang
-    if($action=='create_owe'){
+    else if($action=='create_owe'){
         $query = "insert into yang_hutang
             set
             nama_yang_hutang = '".$mysqli->real_escape_string($_POST['nama_yang_hutang'])."',
@@ -75,7 +75,7 @@
     }
 
     //tambah_berhutang
-    if($action=='create_debt'){
+    else if($action=='create_debt'){
         $query = "insert into berhutang
                 set
                 nama_berhutang = '".$mysqli->real_escape_string($_POST['nama_berhutang'])."',
@@ -108,4 +108,42 @@
     		echo "<script>document.location='./buy_index.php';alert('Database Error! Barang Tidak Dapat Diubah!')</script>";
     	}
 	}
+
+	//ubah_yang_hutang
+    else if($action == "update_owe"){
+        $query = "update yang_hutang
+    	set
+    	nama_yang_hutang = '".$mysqli->real_escape_string($_POST['nama_yang_hutang'])."',
+   		jumlah_yang_hutang = '".$mysqli->real_escape_string($_POST['jumlah_yang_hutang'])."',
+   		tanggal_yang_hutang = '".$mysqli->real_escape_string($_POST['tanggal_yang_hutang'])."',
+   		status_yang_hutang = '".$mysqli->real_escape_string($_POST['status_yang_hutang'])."',
+   		sisa_yang_hutang = '".$mysqli->real_escape_string($_POST['sisa_yang_hutang'])."'
+    	where id_yang_hutang='".$mysqli->real_escape_string($_REQUEST['id_yang_hutang'])."'";
+
+        if($mysqli->query($query)) {
+            echo "<script>document.location='./financial_owe_index.php';alert('Yang Berhutang Telah Diubah!')</script>";
+        }
+        else{
+            echo "<script>document.location='./financial_owe_index.php';alert('Database Error! Yang Berhutang Tidak Dapat Diubah!')</script>";
+        }
+    }
+
+    //ubah_berhutang
+    else if($action == "update_debt"){
+        $query = "update berhutang
+    	set
+    	nama_berhutang = '".$mysqli->real_escape_string($_POST['nama_berhutang'])."',
+   		jumlah_berhutang = '".$mysqli->real_escape_string($_POST['jumlah_berhutang'])."',
+   		tanggal_berhutang = '".$mysqli->real_escape_string($_POST['tanggal_berhutang'])."',
+   		status_berhutang = '".$mysqli->real_escape_string($_POST['status_berhutang'])."',
+   		sisa_berhutang = '".$mysqli->real_escape_string($_POST['sisa_berhutang'])."'
+    	where id_berhutang='".$mysqli->real_escape_string($_REQUEST['id_berhutang'])."'";
+
+        if($mysqli->query($query)) {
+            echo "<script>document.location='./financial_debt_index.php';alert('Yang Hutang Telah Diubah!')</script>";
+        }
+        else{
+            echo "<script>document.location='./financial_debt_index.php';alert('Database Error! Yang Hutang Tidak Dapat Diubah!')</script>";
+        }
+    }
 ?>
